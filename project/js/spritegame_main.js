@@ -36,6 +36,9 @@ let GAME_CONFIG = {
  * START GAME
  * **********************************/
 function startGame() {
+    hom.style.display = "none"
+    gam.style.display = "block"
+
     PLAYER.box.style.left = '350px'; // starting position
     PLAYER.box.style.top = '180px'; // starting position
     PLAYER.box.style.opacity = '1'; // show player
@@ -57,3 +60,14 @@ function updateHUD(){
     GAME_SCREEN.debug_output.innerHTML = `x: ${PLAYER.box.style.left} | y: ${PLAYER.box.style.top} | animation: ${PLAYER.spriteImgNumber} | count: ${PLAYER.coinCount}`;
 }
 
+
+
+///
+let gam = document.getElementById("game")
+let hom = document.getElementById("home")
+
+function startingPage() {
+    gam.style.display = "none"
+}
+
+startingPage()

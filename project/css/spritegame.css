@@ -2,15 +2,11 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  color: #fff;
-  background: #000;
-  background: radial-gradient(circle, #555 0%, #000 100%);
 }
 
 
 /* dashboard outputs */
-#dashboard {
+/*#dashboard {
   display: grid;
   grid-template-columns: 25% 75%;
   justify-content: center;
@@ -34,11 +30,11 @@ html, body {
   background-color: #222;
   border: 3px solid rgb(68, 221, 183);
   padding: 0.5em;
-}
+}*/
 
 
 /* Sprite game surface */
-#surface {
+/*#surface {
   background-color: #222;
   border: 3px solid rgb(68, 221, 183);
   height: 400px;
@@ -49,21 +45,21 @@ html, body {
 }
 #player {
   position: absolute;
-  width: 37px; /* viewing window */
-  height: 28px; /* viewing window */
-  overflow: hidden;
-  opacity: 0; /* hide till start */
-}
+  width: 37px;*/ /* viewing window */
+  /*height: 28px;*/ /* viewing window */
+  /*overflow: hidden;
+  opacity: 0;*/ /* hide till start */
+/*}
 #spriteImg {
   height: 300px;
-  bottom: 49px; /* which row of sprite */
-  position: relative;
-}
+  bottom: 49px;*/ /* which row of sprite */
+  /*position: relative;
+}*/
 
 
 
 /* collision test */
-#redBox {
+/*#redBox {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -71,4 +67,64 @@ html, body {
   top: 100px;
   left: 500px;
   background-color: rgb(255, 66, 66);
+}*/
+
+
+
+/**/
+html, body {
+  cursor: url(../img/cursor/closed.png), auto;
+  overflow: hidden;
+}
+
+body {
+  background-image: url(../img/bg/start/adf23c20-d055-4c08-95c9-ac023fcca730.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+#logo {
+  width: 32%;
+  position: fixed;
+  top: 28%;
+  left: 37%;
+}
+
+#logo > img {
+  width: 100%;
+}
+
+#options > div {
+  position: fixed;
+
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  text-align: center;
+
+  border-radius: 100px;
+  width: 8vw;
+  height: 15vh;
+
+
+}
+
+#options > div:hover {
+  cursor: url(../img/cursor/open.png), auto;
+}
+
+#start {
+  top: 55%;
+  left: 45%;
+}
+
+#rules {
+  top: 24%;
+  left: 72%;
+}
+
+#extra {
+  top: 25%;
+  left: 27%;
 }

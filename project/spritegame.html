@@ -11,19 +11,33 @@
 	<script src="./js/spritegame_main.js" defer></script>
 	<script src="./js/spritegame_loop.js" defer></script>
 </head>
-<body>
+<body id="body">
 
-	<div id="dashboard">
-		<div id="startButton" onclick="startGame()">START GAME</div>
-		<div id="debug_output"></div>
+	<div id="home">
+		<div id="logo">
+			<img src="./img/logo/pokemon-23-logo-png-transparent.png" alt="pokemon logo">
+		</div>
+
+		<div id="options">
+			<div id="start" onclick="startGame()"></div>
+			<div id="rules"></div>
+			<div id="extra"></div>
+		</div>
 	</div>
-    
-    <div id="surface">
-    	<div id="player">
-    		<img id="spriteImg" src = "./img/kirby.png" alt="sprite"/>
-    	</div>
-		<div id="redBox"><!--BOX FÜR COLLISSION-DETECTION-BEISPIEL--></div>
-    </div>
+
+	<div id="game">
+		<div id="dashboard">
+			<div id="startButton" onclick="startGame()">START GAME</div>
+			<div id="debug_output"></div>
+		</div>
+		
+		<div id="surface">
+			<div id="player">
+				<img id="spriteImg" src = "./img/kirby.png" alt="sprite"/>
+			</div>
+			<div id="redBox"><!--BOX FÜR COLLISSION-DETECTION-BEISPIEL--></div>
+		</div>
+	</div>
 	
 </body>
 </html>
