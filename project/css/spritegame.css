@@ -1,0 +1,74 @@
+/* General styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #fff;
+  background: #000;
+  background: radial-gradient(circle, #555 0%, #000 100%);
+}
+
+
+/* dashboard outputs */
+#dashboard {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+#startButton {
+  color: #fff;
+  background-color: #222;
+  border: 3px solid rgb(68, 221, 183);
+  padding: 0.5em;
+  text-align: center;
+}
+#startButton:hover {
+  cursor: pointer;
+  background-color: #111;
+}
+#debug_output {
+  color: #fff;
+  background-color: #222;
+  border: 3px solid rgb(68, 221, 183);
+  padding: 0.5em;
+}
+
+
+/* Sprite game surface */
+#surface {
+  background-color: #222;
+  border: 3px solid rgb(68, 221, 183);
+  height: 400px;
+  width: 800px;
+  position: relative;
+  margin: 0 auto;
+  transform-origin: top;
+}
+#player {
+  position: absolute;
+  width: 37px; /* viewing window */
+  height: 28px; /* viewing window */
+  overflow: hidden;
+  opacity: 0; /* hide till start */
+}
+#spriteImg {
+  height: 300px;
+  bottom: 49px; /* which row of sprite */
+  position: relative;
+}
+
+
+
+/* collision test */
+#redBox {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  top: 100px;
+  left: 500px;
+  background-color: rgb(255, 66, 66);
+}
