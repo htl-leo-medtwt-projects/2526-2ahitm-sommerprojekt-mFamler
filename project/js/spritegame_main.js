@@ -65,9 +65,38 @@ function updateHUD(){
 ///
 let gam = document.getElementById("game")
 let hom = document.getElementById("home")
+let rul = document.getElementById("rules")
+let log = document.getElementById("logo")
+
+let txt
+
 
 function startingPage() {
     gam.style.display = "none"
 }
 
 startingPage()
+
+function showRules() {
+    log.style.display = "none"
+
+    txt = `
+        <div>
+			<h1>PokeQuest</h1>
+			<h3>
+				You are a young trainer trying to catch some new Pokemon to face off with against your rival.
+			</h3>
+			<p>
+				Catch as many Pokemon as you can by answering questions and getting them right. You have (???)mins to catch them. Once the time is up you have to choose which Pokemon you will face off with against your rival.
+			</p>
+			<p>
+				Movement is controlled with the arowkeys up, down, left and right.
+			</p>
+				
+        </div>
+    `
+
+    rul.innerHTML = txt
+    rul.style.width = "50vw"
+    rul.style.left = "25%"
+}

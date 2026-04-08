@@ -6,7 +6,7 @@ html, body {
 
 
 /* dashboard outputs */
-/*#dashboard {
+#dashboard {
   display: grid;
   grid-template-columns: 25% 75%;
   justify-content: center;
@@ -30,11 +30,11 @@ html, body {
   background-color: #222;
   border: 3px solid rgb(68, 221, 183);
   padding: 0.5em;
-}*/
+}
 
 
 /* Sprite game surface */
-/*#surface {
+#surface {
   background-color: #222;
   border: 3px solid rgb(68, 221, 183);
   height: 400px;
@@ -45,21 +45,21 @@ html, body {
 }
 #player {
   position: absolute;
-  width: 37px;*/ /* viewing window */
-  /*height: 28px;*/ /* viewing window */
-  /*overflow: hidden;
-  opacity: 0;*/ /* hide till start */
-/*}
+  width: 37px; /* viewing window */
+  height: 28px; /* viewing window */
+  overflow: hidden;
+  opacity: 0; /* hide till start */
+}
 #spriteImg {
   height: 300px;
-  bottom: 49px;*/ /* which row of sprite */
-  /*position: relative;
-}*/
+  bottom: 49px; /* which row of sprite */
+  position: relative;
+}
 
 
 
 /* collision test */
-/*#redBox {
+#redBox {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -67,14 +67,21 @@ html, body {
   top: 100px;
   left: 500px;
   background-color: rgb(255, 66, 66);
-}*/
+}
 
 
 
 /**/
+@font-face {
+  font-family: font;
+  src: url(../font/pkmn_rbygsc/PKMN\ RBYGSC.ttf);
+}
+
 html, body {
   cursor: url(../img/cursor/closed.png), auto;
   overflow: hidden;
+
+  font-family: font;
 }
 
 body {
@@ -89,7 +96,7 @@ body {
   width: 32%;
   position: fixed;
   top: 28%;
-  left: 37%;
+  left: 36%;
 }
 
 #logo > img {
@@ -100,14 +107,11 @@ body {
   position: fixed;
 
   background-color: rgba(255, 255, 255, 0);
-  color: white;
   text-align: center;
 
   border-radius: 100px;
   width: 8vw;
   height: 15vh;
-
-
 }
 
 #options > div:hover {
@@ -122,6 +126,41 @@ body {
 #rules {
   top: 24%;
   left: 72%;
+  
+  font-size: 120%;
+  color: rgb(255, 255, 255);
+}
+
+/*#rules:hover {
+  top: 10%;
+  left: 67%;
+
+  background-color: rgba(255, 156, 43, 0.734);
+  color: rgb(255, 221, 50);
+
+  width: 20%;
+  height: 36.5vh;
+  
+  border-radius: 0;
+  padding: 1%;
+}*/
+
+#rules h1 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1%;
+}
+
+#rules h3 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1%;
+}
+
+#rules p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1%;
 }
 
 #extra {
