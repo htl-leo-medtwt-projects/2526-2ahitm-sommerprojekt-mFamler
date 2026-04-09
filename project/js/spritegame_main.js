@@ -87,16 +87,26 @@ function showRules() {
 				You are a young trainer trying to catch some new Pokemon to face off with against your rival.
 			</h3>
 			<p>
-				Catch as many Pokemon as you can by answering questions and getting them right. You have (???)mins to catch them. Once the time is up you have to choose which Pokemon you will face off with against your rival.
+				Catch as many Pokemon as you can by answering questions and getting them right. You get 3 tries per question. You have (???)mins to catch them. Once the time is up you have to choose which Pokemon you will face off with against your rival.
 			</p>
 			<p>
 				Movement is controlled with the arowkeys up, down, left and right.
 			</p>
-				
+			<div onclick="backHome()">back</div>
         </div>
     `
 
     rul.innerHTML = txt
-    rul.style.width = "50vw"
-    rul.style.left = "25%"
+    rul.style = "width: 40vw; left: 28.5%; background-color: rgba(133, 222, 255, 0.74); padding: 1.5%; height: 41.5vh; font-size: 120%; border-radius: 60px; cursor: url(img/cursor/closed.png), auto;"
+}
+
+function backHome() {
+    gam = document.getElementById("game")
+    hom = document.getElementById("home")
+    rul = document.getElementById("rules")
+    log = document.getElementById("logo")
+    log.style.display = "block"
+
+    rul.innerHTML = ""
+    rul.style = "width: 8vw; height: 15vh; border-radius: 100px; left: 72%; background-color: rgba(255, 255, 255, 0); cursor: url(img/cursor/open.png), auto;"
 }

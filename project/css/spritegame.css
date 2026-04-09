@@ -129,6 +129,8 @@ body {
   
   font-size: 120%;
   color: rgb(255, 255, 255);
+
+  user-select: none;
 }
 
 /*#rules:hover {
@@ -143,7 +145,7 @@ body {
   
   border-radius: 0;
   padding: 1%;
-}*/
+}*/ 
 
 #rules h1 {
   padding: 0;
@@ -161,6 +163,22 @@ body {
   padding: 0;
   margin: 0;
   margin-bottom: 1%;
+}
+
+#rules > div > div {
+  border: 1px white solid;
+
+  width: 10%;
+
+  padding: 1% 1.7% 1% 1%;
+  margin-left: 43%;
+  margin-top: 2%;
+
+  cursor: url(../img/cursor/open.png), auto;  
+}
+
+#rules > div > div:hover {
+  transform: scale(1.1);
 }
 
 #extra {
