@@ -67,8 +67,13 @@ let gam = document.getElementById("game")
 let hom = document.getElementById("home")
 let rul = document.getElementById("rules")
 let log = document.getElementById("logo")
+let sta = document.getElementById("start")
+let ext = document.getElementById("extra")
+let bac
 
 let txt
+let count = 0
+let isOnRules = false
 
 
 function startingPage() {
@@ -77,36 +82,89 @@ function startingPage() {
 
 startingPage()
 
+function backHome() {
+    log.style.display = "block"
+    sta.style.display = "block"
+    ext.style.display = "block"
+
+    rul.innerHTML = txt
+    rul.style = "width: 8vw; height: 15vh; border-radius: 100px; left: 72%; background-color: rgba(255, 255, 255, 0); cursor: url(img/cursor/open.png), auto;"
+}
+
 function showRules() {
+    if(!isOnRules) {
+        isOnRules = true
+
+        rul.onclick = ""
+
+        log.style.display = "none"
+        sta.style.display = "none"
+        ext.style.display = "none"
+        count++
+
+        //onclick="showRules()"
+
+        txt = `
+            <div>
+                <h1>PokeQuest</h1>
+                <h3>
+                    You are a young trainer trying to catch some new Pokemon to face off with against your rival.
+                </h3>
+                <p>
+                    Catch as many Pokemon as you can by answering questions and getting them right. You get 3 tries per question. You have (???)mins to catch them. Once the time is up you have to choose which Pokemon you will face off with against your rival.
+                </p>
+                <p>
+                    Movement is controlled with the arowkeys up, down, left and right.
+                </p>
+                <div id="back">back</div>
+            </div>
+        `
+
+        rul.innerHTML = txt
+        rul.style = "width: 40vw; left: 28.5%; background-color: rgba(133, 222, 255, 0.74); padding: 1.5%; height: 44vh; font-size: 120%; border-radius: 60px; cursor: url(img/cursor/closed.png), auto;"
+        
+        bac = document.getElementById("back")
+        bac.onclick = showRules
+    }
+    else if(isOnRules) {
+        isOnRules = false
+
+        rul.onclick = showRules
+
+        txt = ""
+        rul.innerHTML = txt
+
+        log.style.display = "block"
+        sta.style.display = "block"
+        ext.style.display = "block"
+
+        rul.style = "width: 8vw; height: 15vh; border-radius: 100px; left: 72%; background-color: rgba(255, 255, 255, 0); cursor: url(img/cursor/open.png), auto;"
+    }
+ 
+    /*    
     log.style.display = "none"
+    sta.style.display = "none"
+    ext.style.display = "none"
+    count++
 
     txt = `
         <div>
-			<h1>PokeQuest</h1>
-			<h3>
-				You are a young trainer trying to catch some new Pokemon to face off with against your rival.
-			</h3>
-			<p>
-				Catch as many Pokemon as you can by answering questions and getting them right. You get 3 tries per question. You have (???)mins to catch them. Once the time is up you have to choose which Pokemon you will face off with against your rival.
-			</p>
-			<p>
-				Movement is controlled with the arowkeys up, down, left and right.
-			</p>
-			<div onclick="backHome()">back</div>
+            <h1>PokeQuest</h1>
+            <h3>
+                You are a young trainer trying to catch some new Pokemon to face off with against your rival.
+            </h3>
+            <p>
+                Catch as many Pokemon as you can by answering questions and getting them right. You get 3 tries per question. You have (???)mins to catch them. Once the time is up you have to choose which Pokemon you will face off with against your rival.
+            </p>
+            <p>
+                Movement is controlled with the arowkeys up, down, left and right.
+            </p>
+            <div onclick="backHome()" id="back">back</div>
         </div>
-    `
+        `
 
     rul.innerHTML = txt
-    rul.style = "width: 40vw; left: 28.5%; background-color: rgba(133, 222, 255, 0.74); padding: 1.5%; height: 41.5vh; font-size: 120%; border-radius: 60px; cursor: url(img/cursor/closed.png), auto;"
-}
-
-function backHome() {
-    gam = document.getElementById("game")
-    hom = document.getElementById("home")
-    rul = document.getElementById("rules")
-    log = document.getElementById("logo")
-    log.style.display = "block"
-
-    rul.innerHTML = ""
-    rul.style = "width: 8vw; height: 15vh; border-radius: 100px; left: 72%; background-color: rgba(255, 255, 255, 0); cursor: url(img/cursor/open.png), auto;"
+    txt = ""
+    rul.style = "width: 40vw; left: 28.5%; background-color: rgba(133, 222, 255, 0.74); padding: 1.5%; height: 44vh; font-size: 120%; border-radius: 60px; cursor: url(img/cursor/closed.png), auto;"
+    */
 }

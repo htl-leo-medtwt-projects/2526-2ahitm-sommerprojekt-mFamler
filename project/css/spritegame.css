@@ -133,20 +133,6 @@ body {
   user-select: none;
 }
 
-/*#rules:hover {
-  top: 10%;
-  left: 67%;
-
-  background-color: rgba(255, 156, 43, 0.734);
-  color: rgb(255, 221, 50);
-
-  width: 20%;
-  height: 36.5vh;
-  
-  border-radius: 0;
-  padding: 1%;
-}*/ 
-
 #rules h1 {
   padding: 0;
   margin: 0;
@@ -165,7 +151,7 @@ body {
   margin-bottom: 1%;
 }
 
-#rules > div > div {
+#back {
   border: 1px white solid;
 
   width: 10%;
@@ -177,7 +163,7 @@ body {
   cursor: url(../img/cursor/open.png), auto;  
 }
 
-#rules > div > div:hover {
+#back:hover {
   transform: scale(1.1);
 }
 
