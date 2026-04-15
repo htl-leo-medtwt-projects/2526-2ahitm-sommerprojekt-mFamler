@@ -1,12 +1,12 @@
 /* General styling */
-html, body {
+/*html, body {
   margin: 0;
   padding: 0;
-}
+}*/
 
 
 /* dashboard outputs */
-#dashboard {
+/*#dashboard {
   display: grid;
   grid-template-columns: 25% 75%;
   justify-content: center;
@@ -30,11 +30,11 @@ html, body {
   background-color: #222;
   border: 3px solid rgb(68, 221, 183);
   padding: 0.5em;
-}
+} */
 
 
 /* Sprite game surface */
-#surface {
+/*#surface {
   background-color: #222;
   border: 3px solid rgb(68, 221, 183);
   height: 400px;
@@ -42,24 +42,23 @@ html, body {
   position: relative;
   margin: 0 auto;
   transform-origin: top;
-}
-#player {
+} */
+
+/*#player {
   position: absolute;
-  width: 37px; /* viewing window */
-  height: 28px; /* viewing window */
-  overflow: hidden;
-  opacity: 0; /* hide till start */
-}
+  width: 37px; */ /* viewing window */
+  /*height: 28px;*/ /* viewing window */
+  /*overflow: hidden;
+  opacity: 0;*/ /* hide till start */
+/*}
 #spriteImg {
   height: 300px;
-  bottom: 49px; /* which row of sprite */
-  position: relative;
+  bottom: 49px; */ /* which row of sprite */
+  /*position: relative;
 }
 
-
-
 /* collision test */
-#redBox {
+/*#redBox {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -67,12 +66,12 @@ html, body {
   top: 100px;
   left: 500px;
   background-color: rgb(255, 66, 66);
-}
+}*/
 
 
 
 /**/
-@font-face {
+/*@font-face {
   font-family: font;
   src: url(../font/pkmn_rbygsc/PKMN\ RBYGSC.ttf);
 }
@@ -170,4 +169,68 @@ body {
 #extra {
   top: 25%;
   left: 27%;
+}*/
+
+/*new attempt*/
+body {
+  background-image: url(../img/bg/start/adf23c20-d055-4c08-95c9-ac023fcca730.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  overflow: hidden;
+}
+
+#logo {
+}
+
+#logo > img {
+  width: 100%;
+}
+
+#head {
+  width: 35%;
+
+  margin-top: 15%;
+  margin-left: 35%;
+
+  filter: hue-rotate(340deg);
+}
+
+.invis {
+  margin-bottom: 3%;
+
+  background-color: rgba(11, 125, 224, 0.434);
+  border-radius: 100px;
+
+  height: 25vh;
+  width: 13.5vw;
+}
+
+#options {
+  margin-left: 25%;
+  position: relative;
+}
+
+#start {
+  margin-top: -22.9%;
+  margin-left: -1.8%;
+}
+
+#rules {
+  margin-left: 22%;
+  margin-top: 3.5%;
+
+  width: 13.7vw;
+}
+
+#idk {
+  margin-left: 59.5%;
+  margin-top: -45%;
+}
+
+.invis:hover {
+  background-color: rgba(14, 105, 184, 0.436);
+
+  cursor: pointer;
 }
