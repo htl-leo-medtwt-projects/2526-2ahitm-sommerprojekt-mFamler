@@ -178,6 +178,8 @@ body {
   background-size: cover;
   background-attachment: fixed;
 
+  font-family: font;
+
   overflow: hidden;
 }
 
@@ -230,7 +232,38 @@ body {
 }
 
 .invis:hover {
-  background-color: rgba(14, 105, 184, 0.436);
+  /*background-color: rgba(14, 105, 184, 0.436);*/
 
   cursor: pointer;
+}
+
+@font-face {
+  font-family: font;
+  src: url(../font/pkmn_rbygsc/PKMN\ RBYGSC.ttf);
+}
+
+html {
+  cursor: url(../img/cursor/closed.png), auto;
+}
+
+#text {
+  color: white;
+  text-align: center;
+  border: rgb(132, 205, 112) 1px solid;
+  border-radius: 30px;
+  background-color: rgba(132, 205, 112, 0.63);
+
+  width: 40%;
+
+  padding: 1%;
+  margin: auto;
+}
+
+#text div {
+  font-size: 105%;
+}
+
+#back {
+  cursor: pointer;
+
 }

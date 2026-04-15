@@ -168,3 +168,59 @@ function showRules() {
     rul.style = "width: 40vw; left: 28.5%; background-color: rgba(133, 222, 255, 0.74); padding: 1.5%; height: 44vh; font-size: 120%; border-radius: 60px; cursor: url(img/cursor/closed.png), auto;"
     *//*
 }*/
+
+
+// new code
+//
+let home = document.getElementById('home')
+let game = document.getElementById('game')
+let score = document.getElementById('score')
+let start = document.getElementById("start")
+let rules = document.getElementById("rules")
+let idk = document.getElementById("idk")
+let logo = document.getElementById("logo")
+let text = document.getElementById("text")
+
+let txt = ""
+
+//
+function loadPage() {
+    game.style.display = "none"
+    score.style.display = "none"
+    text.style.display = "none"
+}
+
+loadPage()
+
+function showRules() {
+    start.style.display = "none"
+    rules.style.display = "none"
+    idk.style.display = "none"  
+    logo.style.display = "none"
+    text.style.display = "block"
+
+    txt += `
+        <div>
+            <div>
+                <h1>PokeQuest</h1>
+            </div>
+            <div>You are a trainer trying to catch some Pokemon to face off with against your rival.</div>
+            <div>Catch as many Pokemon as you can in limited time.</div>
+            <div>You catch one if you answer the question correctly, you get 3 tries to choose the right answer.</div>
+            <div>After the timer is up choose the Pokemon you want to face up with against your rival.</div>
+            <div>Movement is controlled with the arow-keys.</div>
+            <div onclick="goBack()" id="back">back</div>
+        </div>
+    `
+
+    text.innerHTML = txt
+    txt = ""
+}
+
+function goBack() {
+    start.style.display = "block"
+    rules.style.display = "block"
+    idk.style.display = "block"  
+    logo.style.display = "block"
+    text.style.display = "none"
+}
