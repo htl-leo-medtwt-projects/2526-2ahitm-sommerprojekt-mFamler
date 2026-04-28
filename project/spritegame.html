@@ -22,53 +22,39 @@
 		</div>
 
 		<div id="options">
-			<div id="start" class="invis"></div>
+			<div id="start" class="invis" onclick="startGame()"></div>
 			<div id="rules" class="invis" onclick="showRules()"></div>
-			<div id="idk" class="invis"></div>
+			<div id="idk" class="invis" onclick="showScoreBoard()"></div>
 		</div>
 
 		<div id="text"></div>
 	</div>
 
-	<div id="game"></div>
-
-	<div id="score">
-		<div id="scoreboard">
-			<div>
-				<h1></h1>
-			</div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-
-	<!--<div id="home">
-		<div id="logo">
-			<img src="./img/logo/pokemon-23-logo-png-transparent.png" alt="pokemon logo">
-		</div>
-
-		<div id="options">
-			<div id="start" onclick="startGame()"></div>
-			<div id="rules" onclick="showRules()"></div>
-			<div id="extra"></div>
-		</div>
-	</div>
-
 	<div id="game">
-		<div id="dashboard">
+		<!--<div id="dashboard">
 			<div id="startButton" onclick="startGame()">START GAME</div>
 			<div id="debug_output"></div>
-		</div>
+		</div>!-->
 		
 		<div id="surface">
 			<div id="player">
 				<img id="spriteImg" src = "./img/kirby.png" alt="sprite"/>
 			</div>
-			<div id="redBox">!--><!--BOX FÜR COLLISSION-DETECTION-BEISPIEL--><!--</div>
+			<div id="redBox"><!--BOX FÜR COLLISSION-DETECTION-BEISPIEL!--></div>
 		</div>
 	</div>
 
-	<div id="board"></div>!-->
+	<div id="score">
+		<div id="scoreboard">
+			<div>
+				<h1>SCOREBOARD</h1>
+			</div>
+			<div id="playerInfo">
+				<div>name // time // score</div>
+			</div>
+			<div onclick="goBack()" class="back">back</div>
+		</div>
+	</div>
 	
 </body>
 </html>
