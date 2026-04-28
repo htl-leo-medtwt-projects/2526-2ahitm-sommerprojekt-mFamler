@@ -202,11 +202,13 @@ body {
 .invis {
   margin-bottom: 3%;
 
-  background-color: rgba(11, 125, 224, 0.434);
+  /*background-color: rgba(11, 125, 224, 0.434);*/
   border-radius: 100px;
 
   height: 25vh;
   width: 13.5vw;
+
+  user-select: none;
 }
 
 #options {
@@ -234,7 +236,7 @@ body {
 .invis:hover {
   /*background-color: rgba(14, 105, 184, 0.436);*/
 
-  cursor: pointer;
+  cursor: url(../img/cursor/open.png), auto;
 }
 
 @font-face {
@@ -251,7 +253,7 @@ html {
   text-align: center;
   border: rgb(132, 205, 112) 1px solid;
   border-radius: 30px;
-  background-color: rgba(132, 205, 112, 0.63);
+  background-color: rgba(132, 205, 112, 0.727);
 
   width: 40%;
 
@@ -264,6 +266,6 @@ html {
 }
 
 #back {
-  cursor: pointer;
-
+  cursor: url(../img/cursor/open.png), auto;
+  user-select: none;
 }
