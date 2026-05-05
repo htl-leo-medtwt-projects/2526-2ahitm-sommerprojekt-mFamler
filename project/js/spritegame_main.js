@@ -39,6 +39,7 @@ function startGame() {
     home.style.display = "none" 
     game.style.display = "block"
     //score.style.display = "none"
+    body.style.backgroundImage = "url(./img/bg/basic/c4m9iW.webp)"
 
     PLAYER.box.style.left = '350px'; // starting position
     PLAYER.box.style.top = '180px'; // starting position
@@ -58,7 +59,7 @@ function startGame() {
  * **********************************/
 function updateHUD(){
     // print values in debugger box
-    //GAME_SCREEN.debug_output.innerHTML = `x: ${PLAYER.box.style.left} | y: ${PLAYER.box.style.top} | animation: ${PLAYER.spriteImgNumber} | count: ${PLAYER.coinCount}`;
+    GAME_SCREEN.debug_output.innerHTML = `x: ${PLAYER.box.style.left} | y: ${PLAYER.box.style.top} | animation: ${PLAYER.spriteImgNumber} | count: ${PLAYER.coinCount}`;
 }
 
 // new code
@@ -71,6 +72,7 @@ let rules = document.getElementById("rules")
 let idk = document.getElementById("idk")
 let logo = document.getElementById("logo")
 let text = document.getElementById("text")
+let body = document.getElementById("body")
 
 let txt = ""
 
