@@ -43,6 +43,12 @@ function movePlayer(dx, dy, dr) {
         PLAYER.box.style.transform = `scaleX(${dr})`;
     }
 
+    if(isColliding(PLAYER.box, GAME_SCREEN.redbox, -20) == true) {
+        console.log("touching")
+
+        GAME_SCREEN.redbox.style.top = Math.floor(Math.random() * 100) + px
+        GAME_SCREEN.redbox.style.top = Math.floor(Math.random() * 100) + px
+    }
 }
 
 
@@ -51,10 +57,10 @@ function movePlayer(dx, dy, dr) {
  * ANIMATE PLAYER
  * **********************************/
 function animatePlayer() {
-    if (PLAYER.spriteImgNumber < 9) { // switch to next sprite position
+    if (PLAYER.spriteImgNumber < 2) { // switch to next sprite position
         PLAYER.spriteImgNumber++;
         let x = parseFloat(PLAYER.spriteImg.style.right);
-        x += 37.0; // ANPASSEN!
+        x += 40; // ANPASSEN!
         PLAYER.spriteImg.style.right = x + "px";
     } else { // animation loop finished: back to start animation
         PLAYER.spriteImg.style.right = "0px";

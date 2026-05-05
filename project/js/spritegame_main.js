@@ -41,8 +41,8 @@ function startGame() {
     //score.style.display = "none"
     body.style.backgroundImage = "url(./img/bg/basic/c4m9iW.webp)"
 
-    PLAYER.box.style.left = '350px'; // starting position
-    PLAYER.box.style.top = '180px'; // starting position
+    PLAYER.box.style.left = '0px'; // starting position
+    PLAYER.box.style.top = '0px'; // starting position
     PLAYER.box.style.opacity = '1'; // show player
     PLAYER.spriteImg.style.right = '0px'; // starting animation
 

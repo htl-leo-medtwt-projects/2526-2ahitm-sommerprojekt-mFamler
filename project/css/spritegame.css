@@ -46,13 +46,13 @@
 #player {
   position: absolute;
   width: 37px;  /* viewing window */
-  height: 28px; /* viewing window */
+  height: 27px; /* viewing window */
   overflow: hidden;
   opacity: 0; 
 }
 #spriteImg {
-  height: 300px;
-  bottom: 49px;  /* which row of sprite */
+  height: 108px;
+  bottom: 83px;  /* which row of sprite */
   position: relative;
 }
 
