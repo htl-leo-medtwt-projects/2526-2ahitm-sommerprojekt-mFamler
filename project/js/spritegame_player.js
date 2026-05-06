@@ -48,6 +48,8 @@ function movePlayer(dx, dy, dr) {
 
         GAME_SCREEN.redbox.style.top = Math.floor(Math.random() * 400) + "px"
         GAME_SCREEN.redbox.style.left = Math.floor(Math.random() * 400) + "px"
+
+        PLAYER.coinCount++
     }
 }
 

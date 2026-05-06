@@ -81,7 +81,6 @@ function loadPage() {
     game.style.display = "none"
     score.style.display = "none"
     text.style.display = "none"
-    
 }
 
 loadPage()
