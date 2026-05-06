@@ -1,13 +1,18 @@
 /* dashboard outputs */
 #dashboard {
   position: absolute;
-  top: 70%;
+  top: 80%;
+  left: 30%;
 
   width: 40%;
 
   margin: auto;
   margin-bottom: 1%;
   padding: auto;
+}
+
+#dashboard .back {
+  margin-left: 45%;
 }
 
 #debug_output {
@@ -190,7 +195,7 @@ html {
   margin-top: 10%;
   
   width: 30vw;
-  height: 10vh;
+  height: 15vh;
 }
 
 #score h1 {
@@ -208,9 +213,15 @@ html {
 
 #playerInfo {
   border: white solid 1px;
+  padding:2%;
 }
 
 #game {
   padding: 1%;
   margin: 0;
+}
+
+#scoreAdder {
+  user-select: none;
+  cursor: url(../img/cursor/open.png), auto;
 }

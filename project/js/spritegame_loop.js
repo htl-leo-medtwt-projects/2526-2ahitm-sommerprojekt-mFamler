@@ -6,7 +6,7 @@
 /// <reference path="spritegame_player.js" />
 /// <reference path="spritegame_main.js" />
 
-
+let timer 
 
 /***********************************
  * GAME LOOP
@@ -37,5 +37,5 @@ function gameLoop() {
         updateHUD();
     }
 
-    setTimeout(gameLoop, 1000 / GAME_CONFIG.gameSpeed); // async recursion
+    timer = setTimeout(gameLoop, 1000 / GAME_CONFIG.gameSpeed); // async recursion
 }

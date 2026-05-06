@@ -4,7 +4,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sprite Game</title>
+
 	<link rel="stylesheet" href="./css/spritegame.css">
+
+	<script src="./audio/howler/howler.js-master/howler.js-master/src/howler.core.js"></script>
+	<script>
+		var sound = new Howl({
+		src: ['sound.webm', 'sound.mp3']
+		});
+	</script>
+
 	<script src="./js/spritegame_detectCollisions.js" defer></script>
 	<script src="./js/spritegame_keyevents.js" defer></script>
 	<script src="./js/spritegame_player.js" defer></script>
@@ -33,6 +42,7 @@
 	<div id="game">
 		<div id="dashboard">
 			<div id="debug_output"></div>
+			<div onclick="endRun()" class="back">end</div>
 		</div>
 		
 		<div id="surface">
@@ -50,9 +60,12 @@
 				<h1>SCOREBOARD</h1>
 			</div>
 			<div id="playerInfo">
-				<div>name // time // score</div>
+				<div style="border-bottom: 1px solid white;">
+					name // time // score
+				</div>
+				<div id="players"></div>
 			</div>
-			<div onclick="goBack()" class="back">back</div>
+			<div onclick="goBack()" class="back" id="backFromScore">back</div>
 		</div>
 	</div>
 	

@@ -43,11 +43,11 @@ function movePlayer(dx, dy, dr) {
         PLAYER.box.style.transform = `scaleX(${dr})`;
     }
 
-    if(isColliding(PLAYER.box, GAME_SCREEN.redbox, -20) == true) {
+    if(isColliding(PLAYER.box, GAME_SCREEN.redbox, -17) == true) {
         console.log("touching")
 
-        GAME_SCREEN.redbox.style.top = Math.floor(Math.random() * 100) + px
-        GAME_SCREEN.redbox.style.top = Math.floor(Math.random() * 100) + px
+        GAME_SCREEN.redbox.style.top = Math.floor(Math.random() * 400) + "px"
+        GAME_SCREEN.redbox.style.left = Math.floor(Math.random() * 400) + "px"
     }
 }
 

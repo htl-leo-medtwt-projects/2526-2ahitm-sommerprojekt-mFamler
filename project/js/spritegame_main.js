@@ -26,7 +26,7 @@ GAME_SCREEN.surface.style.transform = `scale(${parseFloat(GAME_SCREEN.surfaceSca
  * GAME CONFIG
  ***********************************/
 let GAME_CONFIG = {
-    gameSpeed: 24, // game loop refresh rate (pictures per second)
+    gameSpeed: 30, // game loop refresh rate (pictures per second)
     characterSpeed: 5 // move offset in PX
 }
 
@@ -81,6 +81,7 @@ function loadPage() {
     game.style.display = "none"
     score.style.display = "none"
     text.style.display = "none"
+    
 }
 
 loadPage()
@@ -119,13 +120,69 @@ function goBackToHome() {
 }
 
 function goBack() {
+    body.style.backgroundImage = "url(./img/bg/start/adf23c20-d055-4c08-95c9-ac023fcca730.jpg)"
+
     home.style.display = "block"
     game.style.display = "none"
     score.style.display = "none"
 }
 
 function showScoreBoard() {
+    body.style.backgroundImage = "url(./img/bg/start/adf23c20-d055-4c08-95c9-ac023fcca730.jpg)"
+
     home.style.display = "none"
     game.style.display = "none"
     score.style.display = "block"
+}
+
+function endRun() {
+    body.style.backgroundImage = "url(./img/bg/start/adf23c20-d055-4c08-95c9-ac023fcca730.jpg)"
+
+    let players = document.getElementById("players")
+    let backFromScore = document.getElementById("backFromScore")
+
+    home.style.display = "none"
+    game.style.display = "none"
+    score.style.display = "block"
+    players.style.display = "block"
+    backFromScore.style.display = "none"
+
+    txt = ""
+    txt = `
+        <div style="display: flex; flex-direction: row;">
+            <div>
+                <input type="text" id="playerName">
+            </div>
+            <div onclick="addScore()" id="scoreAdder">
+                add score
+            </div>
+        </div>
+    `
+    players.innerHTML = txt
+
+}
+
+function addScore() {
+    let playerNameInput = document.getElementById("playerName")
+    let playerInfo = document.getElementById("playerInfo")
+    
+    let playerName = playerNameInput.value
+
+    if(playerName != "") {
+        players.style.display = "none"
+        backFromScore.style.display = "block"
+
+        clearTimeout(timer)
+
+        score.style.height = "auto"
+
+        txt = ""
+        txt = `
+            <div>
+                ${playerName} // 1:00 // 10
+            </div>
+        `
+
+        playerInfo.innerHTML += txt
+    }
 }
