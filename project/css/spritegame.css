@@ -50,26 +50,31 @@
 
 #player {
   position: absolute;
-  width: 37px;  /* viewing window */
-  height: 27px; /* viewing window */
+  width: 40px;  /* viewing window */ /*35*/
+  height: 36px; /* viewing window */ /*32*/
   overflow: hidden;
   opacity: 0; 
+
+  /*border: white solid 0.5px;*/
 }
 #spriteImg {
-  height: 108px;
-  bottom: 83px;  /* which row of sprite */
+  height: 138px; /*118 / 128*/
+  bottom: 100px;  /* which row of sprite */ /*88*/
+
   position: relative;
 }
 
 /* collision test */
 #redBox {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
+
+  width: 49px;
+  height: 51px;
+
   top: 100px;
   left: 500px;
-  background-color: rgb(255, 66, 66);
+
+  transform: scale(0.7);
 }
 
 

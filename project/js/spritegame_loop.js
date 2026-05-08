@@ -14,25 +14,25 @@ let timer
 function gameLoop() {
     if (KEY_EVENTS.leftArrow) {
         movePlayer((-1) * GAME_CONFIG.characterSpeed, 0, -1);
-        PLAYER.spriteImg.style.bottom = "83px"
+        PLAYER.spriteImg.style.bottom = "100px"
         animatePlayer();
         updateHUD();
     }
     if (KEY_EVENTS.rightArrow) {
         movePlayer(GAME_CONFIG.characterSpeed, 0, 1);
-        PLAYER.spriteImg.style.bottom = "83px"
+        PLAYER.spriteImg.style.bottom = "100px"
         animatePlayer();
         updateHUD();
     }
     if (KEY_EVENTS.upArrow) {
         movePlayer(0, (-1) * GAME_CONFIG.characterSpeed, 0);
-        PLAYER.spriteImg.style.bottom = "53px"
+        PLAYER.spriteImg.style.bottom = "67px"
         animatePlayer();
         updateHUD();
     }
     if (KEY_EVENTS.downArrow) {
         movePlayer(0, GAME_CONFIG.characterSpeed, 0);
-        PLAYER.spriteImg.style.bottom = "0px"
+        PLAYER.spriteImg.style.bottom = "3px"
         animatePlayer();
         updateHUD();
     }

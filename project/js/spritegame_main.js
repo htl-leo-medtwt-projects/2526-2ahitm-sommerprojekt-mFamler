@@ -26,7 +26,7 @@ GAME_SCREEN.surface.style.transform = `scale(${parseFloat(GAME_SCREEN.surfaceSca
  * GAME CONFIG
  ***********************************/
 let GAME_CONFIG = {
-    gameSpeed: 30, // game loop refresh rate (pictures per second)
+    gameSpeed: 20, // game loop refresh rate (pictures per second)
     characterSpeed: 5 // move offset in PX
 }
 
@@ -59,7 +59,7 @@ function startGame() {
  * **********************************/
 function updateHUD(){
     // print values in debugger box
-    GAME_SCREEN.debug_output.innerHTML = `x: ${PLAYER.box.style.left} | y: ${PLAYER.box.style.top} | animation: ${PLAYER.spriteImgNumber} | count: ${PLAYER.coinCount}`;
+    GAME_SCREEN.debug_output.innerHTML = `x: ${PLAYER.box.style.left} | y: ${PLAYER.box.style.top} | animation: ${PLAYER.spriteImgNumber} | count: ${PLAYER.coinCount} | lives: <3 <3 <3`;
 }
 
 // new code
@@ -184,4 +184,8 @@ function addScore() {
 
         playerInfo.innerHTML += txt
     }
+}
+
+function catchPokemon() {
+    console.log("pokemon catching in progress")
 }

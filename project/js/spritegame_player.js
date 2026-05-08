@@ -50,6 +50,10 @@ function movePlayer(dx, dy, dr) {
         GAME_SCREEN.redbox.style.left = Math.floor(Math.random() * 400) + "px"
 
         PLAYER.coinCount++
+
+        catchPokemon()
+
+        //GAME_SCREEN.redbox.src = `./img/sprites/edited/red_box/venonat.png` how to change the img
     }
 }
 
@@ -59,10 +63,10 @@ function movePlayer(dx, dy, dr) {
  * ANIMATE PLAYER
  * **********************************/
 function animatePlayer() {
-    if (PLAYER.spriteImgNumber < 2) { // switch to next sprite position
+    if (PLAYER.spriteImgNumber < 4) { // switch to next sprite position
         PLAYER.spriteImgNumber++;
         let x = parseFloat(PLAYER.spriteImg.style.right);
-        x += 40; // ANPASSEN!
+        x += 36.5; // ANPASSEN! /*33*/
         PLAYER.spriteImg.style.right = x + "px";
     } else { // animation loop finished: back to start animation
         PLAYER.spriteImg.style.right = "0px";
