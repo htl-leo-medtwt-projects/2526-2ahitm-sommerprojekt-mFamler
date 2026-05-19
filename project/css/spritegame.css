@@ -248,11 +248,38 @@ html {
 }
 
 #pokemon_caught > img {
-  transform: scale(5);
+  transform: scale(3);
+
+  padding: auto;
+  margin: auto;
+  margin-left: 43%;
+  margin-top: 10%;
+
+  /*border: solid white 1px;*/
 }
 
 #pokemon_caught {
   position: fixed;
-  top: 10%;
-  left: 35%;
+  /*top: 22%;
+  left: 46%;*/
+
+  width: 60%;
+  height: 35vh;
+
+  /*border: solid white 1px;*/
+
+  padding: auto;
+  margin: auto;
+  margin-left: 20%;
+  margin-top: 12%;
+}
+
+#question_box > img {
+  transform: scale(3.808);
+}
+
+#question_box {
+  position: fixed;
+  top: 82.4%;
+  left: 36.8%;
 }

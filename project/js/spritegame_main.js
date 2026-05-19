@@ -79,6 +79,9 @@ let questions = document.getElementById("questions")
 let dashboard = document.getElementById("dashboard")
 let pokemon_caught = document.getElementById("pokemon_caught")
 let questionnaire = document.getElementById("questionnaire")
+let question_box = document.getElementById("question_box")
+let question_txt = document.getElementById("question_txt")
+let question_answer = document.getElementById("question_answer")
 
 let txt = ""
 
@@ -98,6 +101,7 @@ function showRules() {
     idk.style.display = "none"  
     logo.style.display = "none"
     text.style.display = "block"
+    txt = ""
 
     txt += `
         <div>
