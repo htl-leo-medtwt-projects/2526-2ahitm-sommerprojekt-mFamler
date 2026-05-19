@@ -40,6 +40,7 @@ function startGame() {
     game.style.display = "block"
     //score.style.display = "none"
     body.style.backgroundImage = "url(./img/bg/basic/c4m9iW.webp)"
+    questions.style.display = "none"
 
     PLAYER.box.style.left = '0px'; // starting position
     PLAYER.box.style.top = '0px'; // starting position
@@ -73,6 +74,11 @@ let idk = document.getElementById("idk")
 let logo = document.getElementById("logo")
 let text = document.getElementById("text")
 let body = document.getElementById("body")
+let endGame = document.getElementById("endGame")
+let questions = document.getElementById("questions")
+let dashboard = document.getElementById("dashboard")
+let pokemon_caught = document.getElementById("pokemon_caught")
+let questionnaire = document.getElementById("questionnaire")
 
 let txt = ""
 
@@ -81,6 +87,7 @@ function loadPage() {
     game.style.display = "none"
     score.style.display = "none"
     text.style.display = "none"
+    endGame.style.display = "none"
 }
 
 loadPage()
@@ -188,4 +195,10 @@ function addScore() {
 
 function catchPokemon() {
     console.log("pokemon catching in progress")
+
+    questions.style.display = "block"
+    surface.style.display = "none"
+    dashboard.style.display = "none"
+
+    pokemon_caught.src = pokemon[pokemonCounter].img
 }

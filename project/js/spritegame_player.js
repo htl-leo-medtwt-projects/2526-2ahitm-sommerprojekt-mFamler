@@ -17,6 +17,7 @@ let PLAYER = {
     coinCount: 0
 }
 
+let pokemonCounter = 1;
 
 
 /***********************************
@@ -53,7 +54,12 @@ function movePlayer(dx, dy, dr) {
 
         catchPokemon()
 
-        //GAME_SCREEN.redbox.src = `./img/sprites/edited/red_box/venonat.png` how to change the img
+        GAME_SCREEN.redbox.src = pokemon[pokemonCounter].img //how to change the img
+        GAME_SCREEN.redbox.style.width = pokemon[pokemonCounter].width + "px"
+        GAME_SCREEN.redbox.style.height = pokemon[pokemonCounter].height + "px"
+        //pokemonCounter++
+
+        //console.log(pokemon)
     }
 }
 

@@ -8,11 +8,13 @@
 	<link rel="stylesheet" href="./css/spritegame.css">
 
 	<script src="./audio/howler/howler.js-master/howler.js-master/src/howler.core.js"></script>
-	<script>
+	<!--<script>
 		var sound = new Howl({
 		src: ['sound.webm', 'sound.mp3']
 		});
-	</script>
+	</script>!-->
+
+	<script src="./json/redBoxJsonArray.js" defer></script>
 
 	<script src="./js/spritegame_detectCollisions.js" defer></script>
 	<script src="./js/spritegame_keyevents.js" defer></script>
@@ -53,7 +55,14 @@
 				<img src="./img/sprites/edited/red_box/abba.png" alt="red_box" id="redBox">
 			</div>
 		</div>
+
+		<div id="questions">
+			<div id="pokemon_caught"><img src="./img/sprites/edited/red_box/abba.png" alt="pokemon caught"></div>
+			<div id="questinnaire"></div>
+		</div>
 	</div>
+
+	<div id="endGame"></div>
 
 	<div id="score">
 		<div id="scoreboard">

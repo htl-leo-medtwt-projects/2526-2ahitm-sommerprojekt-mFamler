@@ -1,4 +1,4 @@
-[
+let pokemon = [
     {
         "img": "./img/sprites/edited/red_box/abba.png",
         "width": 52,

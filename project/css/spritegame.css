@@ -68,8 +68,8 @@
 #redBox {
   position: absolute;
 
-  width: 49px;
-  height: 51px;
+  width: 52px;
+  height: 43px;
 
   top: 100px;
   left: 500px;
@@ -229,4 +229,30 @@ html {
 #scoreAdder {
   user-select: none;
   cursor: url(../img/cursor/open.png), auto;
+}
+
+#questions {
+  width: 960px;
+  height: 640px;
+
+  background-image: url(../img/bg/ingame/pokemon_catch_screen_times4_details.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  transform: scale(0.95);
+
+  padding: auto;
+  margin: auto;
+}
+
+#pokemon_caught > img {
+  transform: scale(5);
+}
+
+#pokemon_caught {
+  position: fixed;
+  top: 10%;
+  left: 35%;
 }
