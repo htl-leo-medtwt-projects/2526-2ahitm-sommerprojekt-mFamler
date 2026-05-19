@@ -124,7 +124,7 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/dartin.png",
         "width": 35,
         "height": 44,
-        "question": "What is its final evelution?",
+        "question": "What is Dratinis final evelution?",
         "choices": ["a) Dragonite", "b) Garchomp", "c) Salamence"],
         "answer": "a) Dragonite",
         "hp": 41,
@@ -278,7 +278,7 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/groudon.png",
         "width": 78,
         "height": 73,
-        "question": "What weather is created by its ability when it enters battle?",
+        "question": "What weather is created by Groudons ability when it enters battle?",
         "choices": ["a) harsh sunlight that boosts fire-type moves", "b) heavy rain that boosts water-type moves", "c) sanstorm that causes chip damage each turn"],
         "answer": "a) harsh sunlight that boosts fire-type moves",
         "hp": 100,
@@ -300,9 +300,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/jiggly.png",
         "width": 39,
         "height": 36,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What does Jigglypuff's singing do?",
+        "choices": ["a) it heals allies", "c) it boosts attack", "b) it puts enemies to sleep"],
+        "answer": "c) it puts enemies to sleep",
         "hp": 115,
         "atk": 45
 
@@ -311,9 +311,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/jirachi.png",
         "width": 46,
         "height": 43,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What is Jirachi known for?",
+        "choices": ["a) for creating space", "b) for granting wishes", "c) for controlling time"],
+        "answer": "b) for granting wishes",
         "hp": 100,
         "atk": 100
 
@@ -322,9 +322,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/jolteon.png",
         "width": 43,
         "height": 48,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What type is Jolteon?",
+        "choices": ["a) electric", "b) psyhic", "c) normal"],
+        "answer": "a) electric",
         "hp": 65,
         "atk": 65
 
@@ -333,9 +333,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/koffing.png",
         "width": 69,
         "height": 61,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What type is Koffing?",
+        "choices": ["a) poison", "b) dark", "c) fire"],
+        "answer": "a) poison",
         "hp": 40,
         "atk": 65
 
@@ -344,9 +344,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/kyogre.png",
         "width": 79,
         "height": 78,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What weather is created by Kyogres ability when it enters battle?",
+        "choices": ["a) harsh sunlight that boosts fire-type moves", "b) hail that damages non-ice-type Pokémon each turn", "c) heavy rain that boosts water-type moves"],
+        "answer": "c) heavy rain that boosts water-type moves",
         "hp": 100,
         "atk": 100
 
@@ -355,9 +355,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/latias.png",
         "width": 68,
         "height": 66,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What is Latias known for in the Pokémon world?",
+        "choices": ["a) for being highly protective and forming strong bonds with humans it trusts", "b) for constantly challenging other Pokémon for territory", "c) for preferring to live alone to live alone and avoid humans"],
+        "answer": "a) for being highly protective and forming strong bonds with human it trusts",
         "hp": 80,
         "atk": 80
 
@@ -366,9 +366,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/latios.png",
         "width": 73,
         "height": 72,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What special ability is Latios known for?",
+        "choices": ["a) it can change types depending on the weather", "b) it can evolve into a stronger form using an item", "c) it can use telepathy to talk to humans and Pokémon"],
+        "answer": "c) it can use telepathy to talk to humans and Pokémon",
         "hp": 80,
         "atk": 90
 
@@ -377,9 +377,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/leafeon.png",
         "width": 51,
         "height": 51,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "How do you evolve Evee into Leafeon?",
+        "choices": ["a) by trading it while holding a grass-type item", "b) by using a leaf stone", "c) by leveling up near special mossy or forest areas"],
+        "answer": "b) by using a leaf stone",
         "hp": 65,
         "atk": 110
 
@@ -388,9 +388,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/lobunny.png",
         "width": 53,
         "height": 62,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What type is Lopunny?",
+        "choices": ["a) fairy", "b) fighting", "c) normal"],
+        "answer": "c) normal",
         "hp": 65,
         "atk": 76
 
@@ -399,9 +399,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/manaphy.png",
         "width": 54,
         "height": 37,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What is unique to Manaphy?",
+        "choices": ["a) it evolves to a stronger form after leveling up", "b) it can breed with Ditto to make Phione", "c) it changes its form depending on the weather"],
+        "answer": "b) it can breed with Ditto to make Phione",
         "hp": 100,
         "atk": 100
 
