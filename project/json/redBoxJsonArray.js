@@ -137,7 +137,7 @@ let pokemon = [
         "height": 54,
         "question": "How does is Dragonair evolved?",
         "choices": ["a) when its traded to another player", "b) when it has a high friendship level", "c) when it reaches level 55"],
-        "answer": "c) when it reaches level 5",
+        "answer": "c) when it reaches level 55",
         "hp": 61,
         "atk": 84
 
@@ -146,9 +146,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/entei.png",
         "width": 75,
         "height": 68,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What type is Entei?",
+        "choices": ["a) fire", "b) rock", "c) ground"],
+        "answer": "a) fire",
         "hp": 115,
         "atk": 115
 
@@ -157,8 +157,8 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/espeon.png",
         "width": 53,
         "height": 53,
-        "question": "",
-        "choices": [],
+        "question": "How do you evolve Evee into Espeon?",
+        "choices": ["a) by having high friendship and leveling up during daytime", "b) by being exposed to a sunstone", "c) by having high friendship and leveling up during nighttime"],
         "answer": "",
         "hp": 65,
         "atk": 65
@@ -168,9 +168,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/espeon_shiny.png",
         "width": 53,
         "height": 53,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "How do you get a shiny Espeon? (assuming under the right conditions to get a Espeon)",
+        "choices": ["a) by catching a shiny Evee and evolving it", "b) by evolving any Evee, since theres a random chance it can turn into a shiny Espeon", "c) by using a special item during the evelution to Espeon"],
+        "answer": "a) by catching a shiny Evee and evolving it",
         "hp": 65,
         "atk": 65
 
@@ -179,9 +179,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/evee.png",
         "width": 42,
         "height": 43,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "Which one is an evelution of Evee?",
+        "choices": ["a) Luxray", "b) Jolteon", "c) Ampharos"],
+        "answer": "b) Jolteon",
         "hp": 55,
         "atk": 55
 
@@ -190,9 +190,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/fairy.png",
         "width": 37,
         "height": 35,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "In the Pokémon lore, where is Clefairy commonly associated with appearing?",
+        "choices": ["a) meteor falls", "b) mount moon", "c) seafoam islands"],
+        "answer": "b) mount moon",
         "hp": 70,
         "atk": 45
 
@@ -201,9 +201,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/farfetched_shiny.png",
         "width": 45,
         "height": 48,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What does Farfetche'd use the leek for?",
+        "choices": ["a) as a tool it uses for both offense and defense in battle", "b) as a signal to attract other Farfetche'd", "c) as a resource it guards and uses during migration"],
+        "answer": "a) as a tool it uses for both offense and defense in battle",
         "hp": 52,
         "atk": 90
 
@@ -212,9 +212,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/flareon.png",
         "width": 44,
         "height": 46,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What type is Flareon?",
+        "choices": ["a) normal", "b) fire", "c) fighting"],
+        "answer": "b) fire",
         "hp": 65,
         "atk": 130
 
@@ -223,9 +223,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/froslas.png",
         "width": 37,
         "height": 54,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What type combo does Froslass have?",
+        "choices": ["a) ice / psychic", "b) ghost / fairy", "c) ice / ghost"],
+        "answer": "c) ice / ghost",
         "hp": 70,
         "atk": 80
 
@@ -234,9 +234,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/gastly.png",
         "width": 69,
         "height": 54,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What type is Gastly?",
+        "choices": ["a) ghost / poison", "b) poison", "c) ghost"],
+        "answer": "a) ghost / poison",
         "hp": 30,
         "atk": 35
 
@@ -245,9 +245,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/gengar_shiny.png",
         "width": 58,
         "height": 53,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What type is Gengar?",
+        "choices": ["a) ghost / poison", "b) ghost / dark", "c) poison / psychic"],
+        "answer": "a) ghost / poison",
         "hp": 60,
         "atk": 65
 
@@ -256,9 +256,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/giratina.png",
         "width": 78,
         "height": 76,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What is special about Giratina?",
+        "choices": ["a) it evolves into abother Pokémon", "b) it changes its ability when it levels up", " c) it has two different forms"],
+        "answer": "c) it has two different forms",
         "hp": 150,
         "atk": 100
 
@@ -267,9 +267,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/glaceon_shiny.png",
         "width": 66,
         "height": 49,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What type is Glaceon?",
+        "choices": ["a) fairy", "b) ice", "c) water"],
+        "answer": "b) ice",
         "hp": 65,
         "atk": 60
 
@@ -278,9 +278,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/groudon.png",
         "width": 78,
         "height": 73,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What weather is created by its ability when it enters battle?",
+        "choices": ["a) harsh sunlight that boosts fire-type moves", "b) heavy rain that boosts water-type moves", "c) sanstorm that causes chip damage each turn"],
+        "answer": "a) harsh sunlight that boosts fire-type moves",
         "hp": 100,
         "atk": 150
 
@@ -289,9 +289,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/haunter.png",
         "width": 70,
         "height": 49,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "How does Haunter evolve?",
+        "choices": ["a) by using a gust stone", "b) by just leveling up reguarly", "c) by trading it to another player"],
+        "answer": "c) by trading it to another player",
         "hp": 45,
         "atk": 50
 
