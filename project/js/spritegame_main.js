@@ -205,4 +205,20 @@ function catchPokemon() {
     dashboard.style.display = "none"
 
     pokemon_caught.src = pokemon[pokemonCounter].img
+
+    //
+    question_txt.innerHTML = pokemon[pokemonCounter].question
+    
+    txt = ""
+    for(let i = 0; i < pokemon[pokemonCounter].choices.length; i++) {
+        txt += `<div>${pokemon[pokemonCounter].choices[i]}</div>`
+    }
+    
+    question_answer.innerHTML = txt
+    txt = ""
+
 }
+
+/*function checksAnswer(this) {
+
+}*/

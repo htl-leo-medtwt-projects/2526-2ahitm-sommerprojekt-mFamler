@@ -410,9 +410,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/mew.png",
         "width": 47,
         "height": 42,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "Why is Mew special?",
+        "choices": ["a) it can evolve into any Pokémon", "b) it can learn almost every move", "c) it has the highst HP ingame"],
+        "answer": "b) it can learn almost every move",
         "hp": 100,
         "atk": 100
 
@@ -421,9 +421,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/minun.png",
         "width": 33,
         "height": 39,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What type is Minun?",
+        "choices": ["a) normal", "b) fairy", "c) electric"],
+        "answer": "c) electric",
         "hp": 60,
         "atk": 40
 
@@ -432,9 +432,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/mudkip.png",
         "width": 37,
         "height": 39,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What is Mudkip's final evelution?",
+        "choices": ["a) Swampert", "b) Quagsire", "c) Marshtomp"],
+        "answer": "a) Swampert",
         "hp": 50,
         "atk": 70
 
@@ -443,9 +443,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/persian.png",
         "width": 59,
         "height": 53,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What type is Persian?",
+        "choices": ["a) dark", "b) fighting", "c) normal"],
+        "answer": "c) normal",
         "hp": 65,
         "atk": 70
 
@@ -454,9 +454,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/phione.png",
         "width": 49,
         "height": 37,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "Where can you obtain Phione?",
+        "choices": ["a) in post-game legendary caves", "b) in wild ocean routes as a rare encounter", "c) by hatching eggs through a special way"],
+        "answer": "c) by hatching eggs through a special way",
         "hp": 80,
         "atk": 80
 
@@ -465,9 +465,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/plusle_shiny.png",
         "width": 32,
         "height": 37,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What type is Plusle?",
+        "choices": ["a) normal", "b) electric", "c) fairy"],
+        "answer": "b) electric",
         "hp": 60,
         "atk": 50
 
@@ -476,9 +476,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/ponya_shiny.png",
         "width": 50,
         "height": 53,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What does Ponyta evolve into?",
+        "choices": ["a) Rapidosh", "b) Rapidashar", "c) Rapidash"],
+        "answer": "c) Rapidash",
         "hp": 50,
         "atk": 85
 
@@ -487,9 +487,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/psyduck.png",
         "width": 40,
         "height": 46,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What commonly happens when Psyducks headache becomes too strong?",
+        "choices": ["a) it becomes immune to all status conditions", "b) it releases a burst of psychic power uncontrollaby", "c) it evolves into Golduck"],
+        "answer": "b) it releases a burst of psychic power uncontrollaby",
         "hp": 50,
         "atk": 52
 
@@ -498,9 +498,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/rapidash.png",
         "width": 69,
         "height": 69,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What is Rapidash known for in the Pokédex?",
+        "choices": ["a) it can run at very high speeds, with its flaming mane and tail intensifying as it gallops", "b) it is said to have a calm nature despite its blazing appearance", "c) its know to start small fires in grass, because of embers it kicks up while running"],
+        "answer": "a) it can run at very high speeds, with its flaming mane and tail intensifying as it gallops",
         "hp": 65,
         "atk": 100
 
@@ -509,9 +509,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/rayquaza.png",
         "width": 76,
         "height": 80,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What did Rayquaza do according to the lore?",
+        "choices": ["a) stopps Groudons and Kyogres battles", "b) cause disaster when it flies", "c) contolls the weather worlwide"],
+        "answer": "a) stopps Groudons and Kyogres battles",
         "hp": 105,
         "atk": 150
 
@@ -520,9 +520,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/regigifas.png",
         "width": 79,
         "height": 70,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What is an ability of Regigigas?",
+        "choices": ["a) intimidate", "b) slow start", "c) pressure"],
+        "answer": "b) slow start",
         "hp": 110,
         "atk": 160
 
@@ -531,9 +531,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/sableye.png",
         "width": 43,
         "height": 44,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What was unique about Sableye before fairy types were introduced?",
+        "choices": ["a) it had no weaknesses", "b) it had the highest defense", "c) it couldn't be hit"],
+        "answer": "a) it had no weaknesses",
         "hp": 50,
         "atk": 75
 
@@ -542,9 +542,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/seel.png",
         "width": 47,
         "height": 53,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What type is Seel?",
+        "choices": ["a) water", "b) normal", "c) ice"],
+        "answer": "a) water",
         "hp": 65,
         "atk": 45
 
@@ -553,9 +553,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/shaymin.png",
         "width": 35,
         "height": 26,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What is required for Shaymin to change into its sky form?",
+        "choices": ["a) being in battle during sunny weather", "b) leveling up while holding a special item", "c) a gracidea that is used during daytime"],
+        "answer": "c) a gracidea that is used during daytime",
         "hp": 100,
         "atk": 100
 
@@ -564,9 +564,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/slowpoke.png",
         "width": 56,
         "height": 44,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What happens when Shellder bites Slowpoke's tail?",
+        "choices": ["a) Slowpoke gains a new typing", "b) Slowpoke evolves into Slowbro", "c) Slowpoke faints"],
+        "answer": "b) Slowpoke evolves into Slowbro",
         "hp": 90,
         "atk": 65
 
@@ -575,9 +575,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/snorlax.png",
         "width": 64,
         "height": 69,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What typically wakes up Snorlax?",
+        "choices": ["a) playing a poké flute near it", "b) using a fire-move on it", "c) attacking it repeatedly"],
+        "answer": "a) playing a poké flute near it",
         "hp": 160,
         "atk": 110
 
@@ -586,9 +586,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/spoink.png",
         "width": 25,
         "height": 47,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What happens if Spoink stops bouncing?",
+        "choices": ["a) it evolves", "b) it sleeps", "c) its heart stops"],
+        "answer": "c) its heart stops",
         "hp": 60,
         "atk": 25
 
@@ -597,9 +597,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/suicine.png",
         "width": 68,
         "height": 72,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What is Suicine known for in the Pokémon lore?",
+        "choices": ["a) creating storms whenever it appears", "b) purifying and traveling across water to cleanse it", "c) guarding caves deep underground"],
+        "answer": "b) purifying and traveling across water to cleanse it",
         "hp": 100,
         "atk": 75
 
@@ -608,9 +608,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/togekiss_shiny.png",
         "width": 77,
         "height": 43,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "How is Togekiss obtained from Togetic?",
+        "choices": ["a) by trading it while holding an item", "b) by using a shiny stone", "c) by leveling up with high friendship"],
+        "answer": "b) by using a shiny stone",
         "hp": 85,
         "atk": 50
 
@@ -619,9 +619,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/togepi.png",
         "width": 24,
         "height": 28,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "How can you obtain Togepi?",
+        "choices": ["a) from a trade", "b) by finding it in the wild", "c) from an egg"],
+        "answer": "c) from an egg",
         "hp": 35,
         "atk": 20
 
@@ -630,9 +630,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/vaporeon.png",
         "width": 54,
         "height": 56,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What is Vaporeon known for in the Pokédex?",
+        "choices": ["a) that it can merge with water to become nearly invisible", "b) that it can freeze water", "c) that it can create powerful electric currents in the water"],
+        "answer": "a) it can merge with water to become nearly invisible",
         "hp": 130,
         "atk": 65
 
@@ -641,9 +641,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/venonat.png",
         "width": 49,
         "height": 51,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What type is Venonat?",
+        "choices": ["a) bug / poison", "b) poison", "c) bug / psychic"],
+        "answer": "a) bug / poison",
         "hp": 60,
         "atk": 55
 
@@ -652,9 +652,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/wobufet.png",
         "width": 46,
         "height": 51,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What makes Wobbuffet special?",
+        "choices": ["a) its high speed stat", "b) that it can't take damage", "c) its counterattacks"],
+        "answer": "c) its counterattacks",
         "hp": 190,
         "atk": 33
 
@@ -663,9 +663,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/woper.png",
         "width": 39,
         "height": 31,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What type is Wooper?",
+        "choices": ["a) ground", "b) water", "c) water / ground"],
+        "answer": "c) water / ground",
         "hp": 55,
         "atk": 45
 
@@ -674,9 +674,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/wurmple.png",
         "width": 28,
         "height": 45,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "What can Wurmple evolve into?",
+        "choices": ["a) Butterfree", "b) Beautifly / Dustox", "c) Venomoth"],
+        "answer": "b) Beautifly / Dustox",
         "hp": 45,
         "atk": 45
 
@@ -685,9 +685,9 @@ let pokemon = [
         "img": "./img/sprites/edited/red_box/zubat.png",
         "width": 48,
         "height": 39,
-        "question": "",
-        "choices": [],
-        "answer": "",
+        "question": "Where can you usually find Zubat?",
+        "choices": ["a) in forests", "b) in attics", "c) in caves"],
+        "answer": "c) in caves",
         "hp": 40,
         "atk": 45
 
