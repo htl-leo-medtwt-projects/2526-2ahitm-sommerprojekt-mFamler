@@ -6,9 +6,9 @@ html {
 #dashboard {
   position: absolute;
   top: 80%;
-  left: 30%;
+  left: 27.5%;
 
-  width: 40%;
+  width: 45%;
 
   margin: auto;
   margin-bottom: 1%;
@@ -17,6 +17,7 @@ html {
 
 #dashboard .back {
   margin-left: 45%;
+  color: white;
 }
 
 #debug_output {
@@ -278,6 +279,10 @@ html {
   margin-top: 12%;
 }
 
+#questions {
+  cursor: pointer;
+}
+
 #question_box > img {
   transform: scale(3.808);
 }
@@ -290,8 +295,14 @@ html {
 
 #txtforquestionnaire {
   position: fixed;
-  top: 80%;
-  left: 40%;
+  top: 75.4%;
+  left: 4.7%;
+
+  border: black solid 1px;
+  padding: 0.5% 1%;
+  width: 85%;
+  height: 15vh;
+  font-size: 100%;
 }
 
 #question_answer {
@@ -303,7 +314,6 @@ html {
   position: fixed;
   bottom: 1.25%;
   left: 1%;
-
 }
 
 #offNOn {
@@ -311,7 +321,7 @@ html {
 
   border: white solid 2px;
   border-radius: 10000px;
-  padding: 3% 1%;
+  padding: 3% 1.5% 3% 2%;
 
   cursor: url(../img/cursor/open.png), auto;
 }

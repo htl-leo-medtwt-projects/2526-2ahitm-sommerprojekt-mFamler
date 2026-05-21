@@ -165,11 +165,11 @@ function endRun() {
 
     txt = ""
     txt = `
-        <div style="display: flex; flex-direction: row;">
+        <div style="display: flex; flex-direction: row; padding-top: 1.5%; justify-content: center; align-items: center;">
             <div>
                 <input type="text" id="playerName">
             </div>
-            <div onclick="addScore()" id="scoreAdder">
+            <div onclick="addScore()" id="scoreAdder" style="margin-left: 2.5%">
                 add score
             </div>
         </div>
@@ -194,7 +194,7 @@ function addScore() {
 
         txt = ""
         txt = `
-            <div>
+            <div style="padding-top: 1.5%;">
                 ${playerName} // 1:00 // ${PLAYER.coinCount}
             </div>
         `
@@ -245,10 +245,16 @@ function checkAnswer(choice) {
     }
 
     pokemonCounter++
-    //console.log("after check ..." + pokemonCounter)
-    GAME_SCREEN.redbox.src = pokemon[pokemonCounter].img //how to change the img
-    GAME_SCREEN.redbox.style.width = pokemon[pokemonCounter].width + "px"
-    GAME_SCREEN.redbox.style.height = pokemon[pokemonCounter].height + "px"
+
+    if(63 == pokemonCounter) {
+        endRun()
+    }
+    else {
+        //console.log("after check ..." + pokemonCounter)
+        GAME_SCREEN.redbox.src = pokemon[pokemonCounter].img //how to change the img
+        GAME_SCREEN.redbox.style.width = pokemon[pokemonCounter].width + "px"
+        GAME_SCREEN.redbox.style.height = pokemon[pokemonCounter].height + "px"
+    }
 }
 
 function muteUnmute() {
