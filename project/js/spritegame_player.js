@@ -17,7 +17,7 @@ let PLAYER = {
     coinCount: 0
 }
 
-let pokemonCounter = 1;
+let pokemonCounter = 0;
 
 
 /***********************************
@@ -50,14 +50,17 @@ function movePlayer(dx, dy, dr) {
         GAME_SCREEN.redbox.style.top = Math.floor(Math.random() * 400) + "px"
         GAME_SCREEN.redbox.style.left = Math.floor(Math.random() * 400) + "px"
 
-        PLAYER.coinCount++
+        //PLAYER.coinCount++
 
         catchPokemon()
 
-        GAME_SCREEN.redbox.src = pokemon[pokemonCounter].img //how to change the img
-        GAME_SCREEN.redbox.style.width = pokemon[pokemonCounter].width + "px"
-        GAME_SCREEN.redbox.style.height = pokemon[pokemonCounter].height + "px"
         //pokemonCounter++
+        //console.log("after update 1 ..." + pokemonCounter)
+        /*GAME_SCREEN.redbox.src = pokemon[pokemonCounter].img //how to change the img
+        GAME_SCREEN.redbox.style.width = pokemon[pokemonCounter].width + "px"
+        GAME_SCREEN.redbox.style.height = pokemon[pokemonCounter].height + "px"*/
+        //pokemonCounter++
+        //console.log("after update 2 ..." + pokemonCounter)
 
         //console.log(pokemon)
     }

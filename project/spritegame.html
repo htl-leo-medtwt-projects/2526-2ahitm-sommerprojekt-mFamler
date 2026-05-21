@@ -7,6 +7,8 @@
 
 	<link rel="stylesheet" href="./css/spritegame.css">
 
+	<link rel="icon" href="./img/web_icon/icon2.png" type="image/x-icon">
+
 	<script src="./audio/howler/howler.js-master/howler.js-master/src/howler.core.js"></script>
 	<!--<script>
 		var sound = new Howl({
@@ -23,6 +25,10 @@
 	<script src="./js/spritegame_loop.js" defer></script>
 </head>
 <body id="body">
+
+	<div id="audioButton" onclick="muteUnmute()">
+		<img src="./img/audio_icon/off.png" alt="music off" id="offNOn">
+	</div>
 
 	<div id="home">
 		<div id="head">
@@ -56,13 +62,16 @@
 		</div>
 
 		<div id="questions">
-			<div id="pokemon_caught"><img src="./img/sprites/edited/red_box/abba.png" alt="pokemon caught"></div>
+			<div id="pokemon_caught"><img src="./img/sprites/edited/red_box/abba.png" alt="pokemon caught" id="pokemon_caught_img"></div>
 			<div id="questionnaire">
 				<div id="question_box">
 					<img src="./img/sprites/edited/question_box/question.png" alt="">
 				</div>
-				<div id="question_txt" class="txtforquestionnaire"></div>
-				<div id="question_answer" class="txtforquestionnaire"></div>
+
+				<div id="txtforquestionnaire">
+					<div id="question_txt"></div>
+					<div id="question_answer"></div>
+				</div>
 			</div>
 		</div>
 	</div>

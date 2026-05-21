@@ -60,7 +60,8 @@ function startGame() {
  * **********************************/
 function updateHUD(){
     // print values in debugger box
-    GAME_SCREEN.debug_output.innerHTML = `x: ${PLAYER.box.style.left} | y: ${PLAYER.box.style.top} | animation: ${PLAYER.spriteImgNumber} | count: ${PLAYER.coinCount} | lives: <3 <3 <3`;
+    GAME_SCREEN.debug_output.innerHTML = `x: ${PLAYER.box.style.left} | y: ${PLAYER.box.style.top} | animation: ${PLAYER.spriteImgNumber} | count: ${PLAYER.coinCount}/${pokemonCounter + 1} | lives: <3 <3 <3`;
+    //GAME_SCREEN.debug_output.innerHTML = `lives: <3 <3 <3 | points: ` + PLAYER.coinCount
 }
 
 // new code
@@ -82,8 +83,13 @@ let questionnaire = document.getElementById("questionnaire")
 let question_box = document.getElementById("question_box")
 let question_txt = document.getElementById("question_txt")
 let question_answer = document.getElementById("question_answer")
+let pokemon_caught_img = document.getElementById("pokemon_caught_img")
+let audioButton = document.getElementById("audioButton")
+let offNOn = document.getElementById("offNOn")
 
 let txt = ""
+let musicState = false
+let bgmusic
 
 //
 function loadPage() {
@@ -189,7 +195,7 @@ function addScore() {
         txt = ""
         txt = `
             <div>
-                ${playerName} // 1:00 // 10
+                ${playerName} // 1:00 // ${PLAYER.coinCount}
             </div>
         `
 
@@ -204,21 +210,61 @@ function catchPokemon() {
     surface.style.display = "none"
     dashboard.style.display = "none"
 
-    pokemon_caught.src = pokemon[pokemonCounter].img
+    console.log(pokemonCounter)
+    pokemon_caught_img.src = pokemon[pokemonCounter].img
 
     //
     question_txt.innerHTML = pokemon[pokemonCounter].question
     
     txt = ""
     for(let i = 0; i < pokemon[pokemonCounter].choices.length; i++) {
-        txt += `<div>${pokemon[pokemonCounter].choices[i]}</div>`
+        txt += `<div onclick="checkAnswer(this)">${pokemon[pokemonCounter].choices[i]}</div>`
     }
     
     question_answer.innerHTML = txt
     txt = ""
 
+    //pokemonCounter++
+    //console.log("after catch ..." + pokemonCounter)
 }
 
-/*function checksAnswer(this) {
+function checkAnswer(choice) {
+    questions.style.display = "none"
+    surface.style.display = "block"
+    dashboard.style.display = "block"
+    //pokemonCounter++
 
-}*/
+    console.log(choice.innerHTML)
+    console.log(pokemon[pokemonCounter].answer)
+    console.log(choice.innerHTML == pokemon[pokemonCounter].answer)
+
+    if(choice.innerHTML == pokemon[pokemonCounter].answer) {
+        PLAYER.coinCount++
+        console.log("true" + PLAYER.coinCount)
+        updateHUD()
+    }
+
+    pokemonCounter++
+    //console.log("after check ..." + pokemonCounter)
+    GAME_SCREEN.redbox.src = pokemon[pokemonCounter].img //how to change the img
+    GAME_SCREEN.redbox.style.width = pokemon[pokemonCounter].width + "px"
+    GAME_SCREEN.redbox.style.height = pokemon[pokemonCounter].height + "px"
+}
+
+function muteUnmute() {
+    if(musicState == false) {
+        //start music
+        bgmusic = new Audio("./audio/bg_music/end.mp3")
+        bgmusic.play()
+
+        offNOn.src = "./img/audio_icon/on.png"
+        musicState = true
+    }
+    else {
+        //stop music
+        bgmusic.pause()
+
+        offNOn.src = "./img/audio_icon/off.png"
+        musicState = false
+    }
+}

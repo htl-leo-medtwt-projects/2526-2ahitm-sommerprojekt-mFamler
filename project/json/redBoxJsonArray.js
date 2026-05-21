@@ -257,7 +257,7 @@ let pokemon = [
         "width": 78,
         "height": 76,
         "question": "What is special about Giratina?",
-        "choices": ["a) it evolves into abother Pokémon", "b) it changes its ability when it levels up", " c) it has two different forms"],
+        "choices": ["a) it evolves into another Pokémon", "b) it changes its ability when it levels up", "c) it has two different forms"],
         "answer": "c) it has two different forms",
         "hp": 150,
         "atk": 100
@@ -290,7 +290,7 @@ let pokemon = [
         "width": 70,
         "height": 49,
         "question": "How does Haunter evolve?",
-        "choices": ["a) by using a gust stone", "b) by just leveling up reguarly", "c) by trading it to another player"],
+        "choices": ["a) by using a dusk stone", "b) by just leveling up reguarly", "c) by trading it to another player"],
         "answer": "c) by trading it to another player",
         "hp": 45,
         "atk": 50

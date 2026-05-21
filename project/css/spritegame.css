@@ -75,8 +75,8 @@ html {
   width: 52px;
   height: 43px;
 
-  top: 100px;
-  left: 500px;
+  top: 10px;
+  left: 50px;
 
   transform: scale(0.7);
 }
@@ -288,6 +288,30 @@ html {
   left: 36.8%;
 }
 
-.txtforquestionnaire {
-  
+#txtforquestionnaire {
+  position: fixed;
+  top: 80%;
+  left: 40%;
+}
+
+#question_answer {
+  user-select: none;
+  cursor: pointer;
+}
+
+#audioButton {
+  position: fixed;
+  bottom: 1.25%;
+  left: 1%;
+
+}
+
+#offNOn {
+  width: 15%;
+
+  border: white solid 2px;
+  border-radius: 10000px;
+  padding: 3% 1%;
+
+  cursor: url(../img/cursor/open.png), auto;
 }
