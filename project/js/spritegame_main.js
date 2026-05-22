@@ -38,9 +38,18 @@ let GAME_CONFIG = {
 function startGame() {
     home.style.display = "none" 
     game.style.display = "block"
+    surface.style.display = "block"
+    dashboard.style.display = "block"
     //score.style.display = "none"
     body.style.backgroundImage = "url(./img/bg/basic/c4m9iW.webp)"
     questions.style.display = "none"
+
+    PLAYER.coinCount = 0
+    pokemonCounter = 0
+
+    GAME_SCREEN.redbox.src = pokemon[pokemonCounter].img //how to change the img
+    GAME_SCREEN.redbox.style.width = pokemon[pokemonCounter].width + "px"
+    GAME_SCREEN.redbox.style.height = pokemon[pokemonCounter].height + "px"
 
     PLAYER.box.style.left = '0px'; // starting position
     PLAYER.box.style.top = '0px'; // starting position
@@ -51,6 +60,8 @@ function startGame() {
     //GAME_SCREEN.startButton.removeAttribute('onclick');
 
     gameLoop();
+
+    gameTimer = setTimeout(endRun, 180000)
 }
 
 
@@ -86,10 +97,14 @@ let question_answer = document.getElementById("question_answer")
 let pokemon_caught_img = document.getElementById("pokemon_caught_img")
 let audioButton = document.getElementById("audioButton")
 let offNOn = document.getElementById("offNOn")
+let playerScoreSorted = document.getElementById("players")
 
 let txt = ""
 let musicState = false
 let bgmusic
+let gameTimer
+let allPlayerName = []
+let allPlayerCounter = 0
 
 //
 function loadPage() {
@@ -116,7 +131,8 @@ function showRules() {
             </div>
             <div>You are a trainer trying to catch some Pokemon to face off with against your rival.</div>
             <div>Catch as many Pokemon as you can in limited time.</div>
-            <div>You catch one if you answer the question correctly, you get 3 tries to choose the right answer.</div>
+            <div>You catch one if you answer the question correctly.</div>
+            <div>You get 3 lives, if you answer incorrectly you loose one live.</div>
             <div>After the timer is up choose the Pokemon you want to face up with against your rival.</div>
             <div>Movement is controlled with the arow-keys.</div>
             <div onclick="goBackToHome()" class="back">back</div>
@@ -176,6 +192,7 @@ function endRun() {
     `
     players.innerHTML = txt
 
+    clearInterval(gameTimer)
 }
 
 function addScore() {
@@ -192,14 +209,24 @@ function addScore() {
 
         score.style.height = "auto"
 
-        txt = ""
-        txt = `
-            <div style="padding-top: 1.5%;">
-                ${playerName} // 1:00 // ${PLAYER.coinCount}
-            </div>
-        `
+        allPlayerName[allPlayerCounter] = {
+            "playerName": playerName,
+            "coinCount": PLAYER.coinCount
+        }
+        allPlayerCounter++
+        allPlayerName.sort((a,b) => b.coinCount - a.coinCount)
 
-        playerInfo.innerHTML += txt
+        txt = ""
+        for(let i = 0; i < allPlayerName.length; i++) {
+            txt += `
+                <div style="padding-top: 1.5%;">
+                    ${allPlayerName[i].playerName} // 1:00 // ${allPlayerName[i].coinCount}
+                </div>
+            `
+        }
+
+        playerScoreSorted.style.display = "block"
+        playerScoreSorted.innerHTML = txt
     }
 }
 

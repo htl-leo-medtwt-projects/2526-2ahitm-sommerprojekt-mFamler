@@ -298,16 +298,21 @@ html {
   top: 75.4%;
   left: 4.7%;
 
-  border: black solid 1px;
+  border: white solid 1px;
+  border-radius: 10px;
   padding: 0.5% 1%;
   width: 85%;
   height: 15vh;
-  font-size: 100%;
+  font-size: 95%;
+}
+
+#question_txt {
+  margin-bottom: 1%;
 }
 
 #question_answer {
-  user-select: none;
   cursor: pointer;
+  margin-left: 2%;
 }
 
 #audioButton {

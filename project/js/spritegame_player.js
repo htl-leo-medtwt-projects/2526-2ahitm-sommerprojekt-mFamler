@@ -33,6 +33,9 @@ function movePlayer(dx, dy, dr) {
     let originalX = parseFloat(PLAYER.box.style.left);
     let originalY = parseFloat(PLAYER.box.style.top);
 
+    console.log("ogX:" + originalX)
+    console.log("ogY:" + originalY)
+
     // calculate new position
     PLAYER.box.style.left = (originalX + dx) + 'px';
     PLAYER.box.style.top = (originalY + dy) + 'px';

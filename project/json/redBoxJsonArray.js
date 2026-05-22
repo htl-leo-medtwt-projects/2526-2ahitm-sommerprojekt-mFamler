@@ -159,7 +159,7 @@ let pokemon = [
         "height": 53,
         "question": "How do you evolve Evee into Espeon?",
         "choices": ["a) by having high friendship and leveling up during daytime", "b) by being exposed to a sunstone", "c) by having high friendship and leveling up during nighttime"],
-        "answer": "",
+        "answer": "a) by having high friendship and leveling up during daytime",
         "hp": 65,
         "atk": 65
 
@@ -301,7 +301,7 @@ let pokemon = [
         "width": 39,
         "height": 36,
         "question": "What does Jigglypuff's singing do?",
-        "choices": ["a) it heals allies", "c) it boosts attack", "b) it puts enemies to sleep"],
+        "choices": ["a) it heals allies", "b) it boosts attack", "c) it puts enemies to sleep"],
         "answer": "c) it puts enemies to sleep",
         "hp": 115,
         "atk": 45
@@ -357,7 +357,7 @@ let pokemon = [
         "height": 66,
         "question": "What is Latias known for in the Pokémon world?",
         "choices": ["a) for being highly protective and forming strong bonds with humans it trusts", "b) for constantly challenging other Pokémon for territory", "c) for preferring to live alone to live alone and avoid humans"],
-        "answer": "a) for being highly protective and forming strong bonds with human it trusts",
+        "answer": "a) for being highly protective and forming strong bonds with humans it trusts",
         "hp": 80,
         "atk": 80
 
@@ -632,7 +632,7 @@ let pokemon = [
         "height": 56,
         "question": "What is Vaporeon known for in the Pokédex?",
         "choices": ["a) that it can merge with water to become nearly invisible", "b) that it can freeze water", "c) that it can create powerful electric currents in the water"],
-        "answer": "a) it can merge with water to become nearly invisible",
+        "answer": "a) that it can merge with water to become nearly invisible",
         "hp": 130,
         "atk": 65
 
