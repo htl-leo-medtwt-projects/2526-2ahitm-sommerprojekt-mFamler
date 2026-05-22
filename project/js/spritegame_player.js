@@ -35,6 +35,23 @@ function movePlayer(dx, dy, dr) {
 
     console.log("ogX:" + originalX)
     console.log("ogY:" + originalY)
+    console.log("newX:" + dx)
+    console.log("newY:" + dy)
+    console.log("")
+
+    if(originalX + dx == 0) {
+        dx = 0
+    }
+    else if(originalX + dx == 570) {
+        dx = 0
+    }
+
+    if(originalY + dy == 0) {
+        dy = 0
+    }
+    else if(originalY + dy == 440) {
+        dy = 0
+    }
 
     // calculate new position
     PLAYER.box.style.left = (originalX + dx) + 'px';

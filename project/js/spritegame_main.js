@@ -51,8 +51,8 @@ function startGame() {
     GAME_SCREEN.redbox.style.width = pokemon[pokemonCounter].width + "px"
     GAME_SCREEN.redbox.style.height = pokemon[pokemonCounter].height + "px"
 
-    PLAYER.box.style.left = '0px'; // starting position
-    PLAYER.box.style.top = '0px'; // starting position
+    PLAYER.box.style.left = '5px'; // starting position
+    PLAYER.box.style.top = '5px'; // starting position
     PLAYER.box.style.opacity = '1'; // show player
     PLAYER.spriteImg.style.right = '0px'; // starting animation
 
