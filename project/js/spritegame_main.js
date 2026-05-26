@@ -224,7 +224,11 @@ function addScore() {
         allPlayerCounter++
 
         allPlayerName.push(scoreOfPlayer)
-        allPlayerName.sort((a,b) => b.coinCount - a.coinCount)
+        allPlayerName.sort((a,b) =>{
+            if(b.coinCount != a.coinCount)
+                return b.coinCount - a.coinCount
+            return a.time - b.time
+        })
         localStorage['highscores'] = JSON.stringify(allPlayerName);
 
         txt = ""
