@@ -62,6 +62,9 @@ function startGame() {
     gameLoop();
 
     gameTimer = setTimeout(endRun, 180000)
+    startTime = performance.now()
+
+    updateHUD()
 }
 
 
@@ -103,8 +106,10 @@ let txt = ""
 let musicState = false
 let bgmusic
 let gameTimer
-let allPlayerName = []
+//let allPlayerName = []
+let allPlayerName = JSON.parse( localStorage['highscores'] ?? '[]' );
 let allPlayerCounter = 0
+let startTime
 
 //
 function loadPage() {
@@ -192,12 +197,18 @@ function endRun() {
     `
     players.innerHTML = txt
 
+    scoreOfPlayer = {
+        "playerName": `player${allPlayerCounter}`,
+        "coinCount": PLAYER.coinCount,
+        "time": Math.floor(((performance.now() - startTime)/1000))
+    }
+
     clearInterval(gameTimer)
 }
 
 function addScore() {
     let playerNameInput = document.getElementById("playerName")
-    let playerInfo = document.getElementById("playerInfo")
+    //let playerInfo = document.getElementById("playerInfo")
     
     let playerName = playerNameInput.value
 
@@ -209,18 +220,18 @@ function addScore() {
 
         score.style.height = "auto"
 
-        allPlayerName[allPlayerCounter] = {
-            "playerName": playerName,
-            "coinCount": PLAYER.coinCount
-        }
+        scoreOfPlayer.playerName = playerName
         allPlayerCounter++
+
+        allPlayerName.push(scoreOfPlayer)
         allPlayerName.sort((a,b) => b.coinCount - a.coinCount)
+        localStorage['highscores'] = JSON.stringify(allPlayerName);
 
         txt = ""
         for(let i = 0; i < allPlayerName.length; i++) {
             txt += `
                 <div style="padding-top: 1.5%;">
-                    ${allPlayerName[i].playerName} // 1:00 // ${allPlayerName[i].coinCount}
+                    ${allPlayerName[i].playerName} // ${allPlayerName[i].time}s // ${allPlayerName[i].coinCount}
                 </div>
             `
         }

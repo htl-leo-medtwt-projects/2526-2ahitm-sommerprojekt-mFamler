@@ -33,11 +33,11 @@ function movePlayer(dx, dy, dr) {
     let originalX = parseFloat(PLAYER.box.style.left);
     let originalY = parseFloat(PLAYER.box.style.top);
 
-    console.log("ogX:" + originalX)
+    /*console.log("ogX:" + originalX)
     console.log("ogY:" + originalY)
     console.log("newX:" + dx)
     console.log("newY:" + dy)
-    console.log("")
+    console.log("")*/
 
     if(originalX + dx == 0) {
         dx = 0
