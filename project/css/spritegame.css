@@ -337,14 +337,52 @@ html {
   background-size: contain;
   background-attachment: fixed;
 
-  width: 243px;
-  height: 114px;
-  transform: scale(3.5);
+  width: 245px;
+  height: 116px;
+  transform: scale(4);
 
   padding: auto;
   margin: auto;
 
   position: fixed;
-  top: 20%;
-  left: 45%;
+  top: 38%;
+  left: 43%;
+
+  margin-bottom: -5%;
+}
+
+#trainerSide {
+  position: fixed;
+  left: -5%;
+  top: 43.4%;
+}
+
+#rivalSide {
+  position: fixed;
+  left: 87%;
+}
+
+#trainerSprite {
+  width: 90%;
+}
+
+#rivalSprite {
+  width: 60%;
+}
+
+#trainerPokemon {
+  position: fixed;
+  top: 60%;
+  left: 17%;
+
+  transform: scaleX(-1) scale(0.75);
+
+}
+
+#rivalPokemon {
+  position: fixed;
+  left: 60%;
+  top: 10%;
+
+  transform: scale(0.75);
 }

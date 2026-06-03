@@ -45,6 +45,9 @@ function startGame() {
     questions.style.display = "none"
     endGame.style.display = "none"
 
+    GAME_SCREEN.debug_output.style.backgroundColor = "rgba(170, 201, 175, 0.679)"
+    lives = 3
+
     PLAYER.coinCount = 0
     pokemonCounter = 0
 
@@ -77,8 +80,7 @@ function startGame() {
  * **********************************/
 function updateHUD(){
     // print values in debugger box
-    GAME_SCREEN.debug_output.innerHTML = `x: ${PLAYER.box.style.left} | y: ${PLAYER.box.style.top} | animation: ${PLAYER.spriteImgNumber} | count: ${PLAYER.coinCount}/${pokemonCounter + 1} | lives: ${lives}`;
-    //GAME_SCREEN.debug_output.innerHTML = `lives: <3 <3 <3 | points: ` + PLAYER.coinCount
+    GAME_SCREEN.debug_output.innerHTML = `x: ${PLAYER.box.style.left} | y: ${PLAYER.box.style.top} | ${PLAYER.coinCount}/${pokemonCounter + 1} pokemon caught | lives: ${lives}`;
 }
 
 // new code
@@ -104,6 +106,8 @@ let pokemon_caught_img = document.getElementById("pokemon_caught_img")
 let audioButton = document.getElementById("audioButton")
 let offNOn = document.getElementById("offNOn")
 let playerScoreSorted = document.getElementById("players")
+let trainerPokemon = document.getElementById("trainerPokemon")
+let rivalPokemon = document.getElementById("rivalPokemon")
 
 let txt = ""
 let musicState = false
@@ -114,8 +118,13 @@ let allPlayerName = JSON.parse( localStorage['highscores'] ?? '[]' );
 let allPlayerCounter = 0
 let startTime
 let pokemonCaughtArray = []
+let footsteps = new Audio("./audio/footsteps/Nintendo Switch - Animal Crossing_ New Horizons - Sound Effects - Footsteps/Pl_Footstep_Pumps_GrassAutumn_Walk_00_Ac.wav")
 
 let lives = 3
+let pokemonChosen = []
+let rivalPokemonArray = []
+let rivalCurrPokemon = 0
+let trainerCurrPokemon = 0
 
 //
 function loadPage() {
@@ -144,7 +153,7 @@ function showRules() {
             <div>Catch as many Pokemon as you can in limited time.</div>
             <div>You catch one if you answer the question correctly.</div>
             <div>You get 3 lives, if you answer incorrectly you loose one live. Loose all lives and it's game over.</div>
-            <div>After the timer is up choose the Pokemon you want to face up with against your rival.</div>
+            <div>After the timer is up 3 random Pokemon are choosen to face against your rival.</div>
             <div>Movement is controlled with the arow-keys.</div>
             <div onclick="goBackToHome()" class="back">back</div>
         </div>
@@ -258,6 +267,7 @@ function addScore() {
 
         txt = ""
         for(let i = 0; i < allPlayerName.length; i++) {
+            //playername // pokemoncaught // rivalbeat // time
             txt += `
                 <div style="padding-top: 1.5%;">
                     ${allPlayerName[i].playerName} // ${allPlayerName[i].time}s // ${allPlayerName[i].coinCount}
@@ -306,6 +316,8 @@ function checkAnswer(choice) {
     console.log(choice.innerHTML == pokemon[pokemonCounter].answer)
 
     if(choice.innerHTML == pokemon[pokemonCounter].answer) {
+        pokemonCaughtArray[PLAYER.coinCount] = pokemon[pokemonCounter]
+
         PLAYER.coinCount++
         console.log("true" + PLAYER.coinCount)
         updateHUD()
@@ -358,4 +370,50 @@ function bossFight() {
     surface.style.display = "none"
 
     body.style.backgroundImage = "url(./img/bg/basic/wp8862046.jpg)"
+    GAME_SCREEN.debug_output.style.backgroundColor = "rgba(107, 176, 209, 0.679)"
+
+    rivalCurrPokemon = 0
+    trainerCurrPokemon = 0
+
+    clearTimeout(timer)
+
+    //randomly choose 3 pokemon for player
+    let random = Math.floor(Math.random() * PLAYER.coinCount)
+    let randomArray = []
+    for(let i = 0; i < 3; i++) {
+        randomArray[i] = random
+        random = Math.floor(Math.random() * PLAYER.coinCount)
+        //endless need to fix
+        while(randomArray.includes(random)) {
+            random = Math.floor(Math.random() * PLAYER.coinCount)
+        }
+    }
+
+    for(let i = 0; i < 3; i++) {
+        pokemonChosen[i] = pokemonCaughtArray[randomArray[i]]
+    }
+
+    //pokemon chosen for the rival
+    for(let i = 0; i < 3; i++) {
+        randomArray[i] = random
+        random = Math.floor(Math.random() * pokemon.length)
+        //endless need to fix
+        while(randomArray.includes(random)) {
+            random = Math.floor(Math.random() * pokemon.length)
+        }
+    }
+
+    for(let i = 0; i < 3; i++) {
+        rivalPokemonArray[i] = pokemon[randomArray[i]]
+    }
+
+    //display the pokemon
+    rivalPokemon.src = rivalPokemonArray[rivalCurrPokemon].img
+    trainerPokemon.src = pokemonChosen[trainerCurrPokemon].img
+
+    rivalPokemon.style.width = rivalPokemonArray[rivalCurrPokemon].width + "px"
+    rivalPokemon.style.height = rivalPokemonArray[rivalCurrPokemon].height + "px"
+
+    trainerPokemon.style.width = pokemonChosen[trainerCurrPokemon].width + "px"
+    trainerPokemon.style.height = pokemonChosen[trainerCurrPokemon].height + "px"
 }

@@ -74,15 +74,6 @@ function movePlayer(dx, dy, dr) {
 
         catchPokemon()
 
-        //pokemonCounter++
-        //console.log("after update 1 ..." + pokemonCounter)
-        /*GAME_SCREEN.redbox.src = pokemon[pokemonCounter].img //how to change the img
-        GAME_SCREEN.redbox.style.width = pokemon[pokemonCounter].width + "px"
-        GAME_SCREEN.redbox.style.height = pokemon[pokemonCounter].height + "px"*/
-        //pokemonCounter++
-        //console.log("after update 2 ..." + pokemonCounter)
-
-        //console.log(pokemon)
     }
 }
 
@@ -92,6 +83,8 @@ function movePlayer(dx, dy, dr) {
  * ANIMATE PLAYER
  * **********************************/
 function animatePlayer() {
+    footsteps.pause()
+
     if (PLAYER.spriteImgNumber < 4) { // switch to next sprite position
         PLAYER.spriteImgNumber++;
         let x = parseFloat(PLAYER.spriteImg.style.right);
@@ -101,5 +94,8 @@ function animatePlayer() {
         PLAYER.spriteImg.style.right = "0px";
         PLAYER.spriteImgNumber = 0;
     }
+
+    //footsteps sound 
+    footsteps.play()
 }
 
