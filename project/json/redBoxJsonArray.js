@@ -1,6 +1,7 @@
 let pokemon = [
     {
         "img": "./img/sprites/edited/red_box/abba.png",
+        "img_back": "../project/img/sprites/edited/red_box/back/abba.png",
         "width": 52,
         "height": 43,
         "question": "What type is Abra?",
@@ -8,32 +9,32 @@ let pokemon = [
         "answer": "b) psychic",
         "hp": 25,
         "atk": 20
-
     },
     {
         "img": "./img/sprites/edited/red_box/absol.png",
+        "img_back": "../project/img/sprites/edited/red_box/back/absol.png",
         "width": 57,
         "height": 66,
         "question": "What type is Absol?",
         "choices": ["a) dark", "b) psychic", "c) ghost"],
         "answer": "a) dark",
         "hp": 65,
-        "atk": 130
-
+        "atk": 130  
     },
     {
         "img": "./img/sprites/edited/red_box/arcanine.png",
+        "img_back": "../project/img/sprites/edited/red_box/back/arcanine.png",
         "width": 70,
         "height": 70,
         "question": "What type is Arcanine?",
         "choices": ["a) normal", "b) fire", "c) ground"],
         "answer": "b) fire",
         "hp": 90,
-        "atk": 110
-
+        "atk": 110  
     },
     {
         "img": "./img/sprites/edited/red_box/azuril.png",
+        "img_back": "",
         "width": 44,
         "height": 48,
         "question": "What type is Azurill?",
@@ -41,10 +42,10 @@ let pokemon = [
         "answer": "b) normal / fairy",
         "hp": 50,
         "atk": 20
-
     },
     {
         "img": "./img/sprites/edited/red_box/buizel.png",
+        "img_back": "",
         "width": 44,
         "height": 53,
         "question": "What type is Buizel?",
@@ -52,10 +53,10 @@ let pokemon = [
         "answer": "b) water",
         "hp": 55,
         "atk": 65
-
     },
     {
         "img": "./img/sprites/edited/red_box/butterfree.png",
+        "img_back": "",
         "width": 57,
         "height": 51,
         "question": "What type is Butterfree?",
@@ -63,10 +64,10 @@ let pokemon = [
         "answer": "a) bug / flying",
         "hp": 60,
         "atk": 45
-
     },
     {
         "img": "./img/sprites/edited/red_box/chinchou.png",
+        "img_back": "",
         "width": 60,
         "height": 33,
         "question": "What type is Chinchou?",
@@ -74,10 +75,10 @@ let pokemon = [
         "answer": "b) water / electric",
         "hp": 75,
         "atk": 38
-
     },
     {
         "img": "./img/sprites/edited/red_box/chingling.png",
+        "img_back": "",
         "width": 33,
         "height": 34,
         "question": "What type is Chingling?",
@@ -85,10 +86,10 @@ let pokemon = [
         "answer": "c) psychic",
         "hp": 45,
         "atk": 30
-
     },
     {
         "img": "./img/sprites/edited/red_box/clamperl.png",
+        "img_back": "",
         "width": 38,
         "height": 38,
         "question": "What is special about Clamperls evelution?",
@@ -96,10 +97,10 @@ let pokemon = [
         "answer": "a) it depends on its held item",
         "hp": 35,
         "atk": 64
-
     },
     {
         "img": "./img/sprites/edited/red_box/clefa.png",
+        "img_back": "",
         "width": 29,
         "height": 27,
         "question": "What type is Cleffa?",
@@ -107,10 +108,10 @@ let pokemon = [
         "answer": "b) fairy",
         "hp": 50,
         "atk": 25
-
     },
     {
         "img": "./img/sprites/edited/red_box/cynda.png",
+        "img_back": "",
         "width": 43,
         "height": 36,
         "question": "What type is Cyndaquill?",
@@ -118,10 +119,10 @@ let pokemon = [
         "answer": "c) fire",
         "hp": 39,
         "atk": 52
-
     },
     {
         "img": "./img/sprites/edited/red_box/dartin.png",
+        "img_back": "",
         "width": 35,
         "height": 44,
         "question": "What is Dratinis final evelution?",
@@ -129,10 +130,10 @@ let pokemon = [
         "answer": "a) Dragonite",
         "hp": 41,
         "atk": 64
-
     },
     {
         "img": "./img/sprites/edited/red_box/dragonair.png",
+        "img_back": "",
         "width": 62,
         "height": 54,
         "question": "How does is Dragonair evolved?",
@@ -140,21 +141,21 @@ let pokemon = [
         "answer": "c) when it reaches level 55",
         "hp": 61,
         "atk": 84
-
     },
     {
         "img": "./img/sprites/edited/red_box/entei.png",
+        "img_back": "",
         "width": 75,
         "height": 68,
         "question": "What type is Entei?",
         "choices": ["a) fire", "b) rock", "c) ground"],
         "answer": "a) fire",
         "hp": 115,
-        "atk": 115
-
+        "atk": 115  
     },
     {
         "img": "./img/sprites/edited/red_box/espeon.png",
+        "img_back": "",
         "width": 53,
         "height": 53,
         "question": "How do you evolve Evee into Espeon?",
@@ -162,10 +163,10 @@ let pokemon = [
         "answer": "a) by having high friendship and leveling up during daytime",
         "hp": 65,
         "atk": 65
-
     },
     {
         "img": "./img/sprites/edited/red_box/espeon_shiny.png",
+        "img_back": "",
         "width": 53,
         "height": 53,
         "question": "How do you get a shiny Espeon? (assuming under the right conditions to get a Espeon)",
@@ -173,10 +174,10 @@ let pokemon = [
         "answer": "a) by catching a shiny Evee and evolving it",
         "hp": 65,
         "atk": 65
-
     },
     {
         "img": "./img/sprites/edited/red_box/evee.png",
+        "img_back": "",
         "width": 42,
         "height": 43,
         "question": "Which one is an evelution of Evee?",
@@ -184,10 +185,10 @@ let pokemon = [
         "answer": "b) Jolteon",
         "hp": 55,
         "atk": 55
-
     },
     {
         "img": "./img/sprites/edited/red_box/fairy.png",
+        "img_back": "",
         "width": 37,
         "height": 35,
         "question": "In the Pokémon lore, where is Clefairy commonly associated with appearing?",
@@ -195,10 +196,10 @@ let pokemon = [
         "answer": "b) mount moon",
         "hp": 70,
         "atk": 45
-
     },
     {
         "img": "./img/sprites/edited/red_box/farfetched_shiny.png",
+        "img_back": "",
         "width": 45,
         "height": 48,
         "question": "What does Farfetche'd use the leek for?",
@@ -206,21 +207,21 @@ let pokemon = [
         "answer": "a) as a tool it uses for both offense and defense in battle",
         "hp": 52,
         "atk": 90
-
     },
     {
         "img": "./img/sprites/edited/red_box/flareon.png",
+        "img_back": "",
         "width": 44,
         "height": 46,
         "question": "What type is Flareon?",
         "choices": ["a) normal", "b) fire", "c) fighting"],
         "answer": "b) fire",
         "hp": 65,
-        "atk": 130
-
+        "atk": 130  
     },
     {
         "img": "./img/sprites/edited/red_box/froslas.png",
+        "img_back": "",
         "width": 37,
         "height": 54,
         "question": "What type combo does Froslass have?",
@@ -228,10 +229,10 @@ let pokemon = [
         "answer": "c) ice / ghost",
         "hp": 70,
         "atk": 80
-
     },
     {
         "img": "./img/sprites/edited/red_box/gastly.png",
+        "img_back": "",
         "width": 69,
         "height": 54,
         "question": "What type is Gastly?",
@@ -239,10 +240,10 @@ let pokemon = [
         "answer": "a) ghost / poison",
         "hp": 30,
         "atk": 35
-
     },
     {
         "img": "./img/sprites/edited/red_box/gengar_shiny.png",
+        "img_back": "",
         "width": 58,
         "height": 53,
         "question": "What type is Gengar?",
@@ -250,21 +251,21 @@ let pokemon = [
         "answer": "a) ghost / poison",
         "hp": 60,
         "atk": 65
-
     },
     {
         "img": "./img/sprites/edited/red_box/giratina.png",
+        "img_back": "",
         "width": 78,
         "height": 76,
         "question": "What is special about Giratina?",
         "choices": ["a) it evolves into another Pokémon", "b) it changes its ability when it levels up", "c) it has two different forms"],
         "answer": "c) it has two different forms",
         "hp": 150,
-        "atk": 100
-
+        "atk": 100  
     },
     {
         "img": "./img/sprites/edited/red_box/glaceon_shiny.png",
+        "img_back": "",
         "width": 66,
         "height": 49,
         "question": "What type is Glaceon?",
@@ -272,21 +273,21 @@ let pokemon = [
         "answer": "b) ice",
         "hp": 65,
         "atk": 60
-
     },
     {
         "img": "./img/sprites/edited/red_box/groudon.png",
+        "img_back": "",
         "width": 78,
         "height": 73,
         "question": "What weather is created by Groudons ability when it enters battle?",
         "choices": ["a) harsh sunlight that boosts fire-type moves", "b) heavy rain that boosts water-type moves", "c) sanstorm that causes chip damage each turn"],
         "answer": "a) harsh sunlight that boosts fire-type moves",
         "hp": 100,
-        "atk": 150
-
+        "atk": 150  
     },
     {
         "img": "./img/sprites/edited/red_box/haunter.png",
+        "img_back": "",
         "width": 70,
         "height": 49,
         "question": "How does Haunter evolve?",
@@ -294,10 +295,10 @@ let pokemon = [
         "answer": "c) by trading it to another player",
         "hp": 45,
         "atk": 50
-
     },
     {
         "img": "./img/sprites/edited/red_box/jiggly.png",
+        "img_back": "",
         "width": 39,
         "height": 36,
         "question": "What does Jigglypuff's singing do?",
@@ -305,21 +306,21 @@ let pokemon = [
         "answer": "c) it puts enemies to sleep",
         "hp": 115,
         "atk": 45
-
     },
     {
         "img": "./img/sprites/edited/red_box/jirachi.png",
+        "img_back": "",
         "width": 46,
         "height": 43,
         "question": "What is Jirachi known for?",
         "choices": ["a) for creating space", "b) for granting wishes", "c) for controlling time"],
         "answer": "b) for granting wishes",
         "hp": 100,
-        "atk": 100
-
+        "atk": 100  
     },
     {
         "img": "./img/sprites/edited/red_box/jolteon.png",
+        "img_back": "",
         "width": 43,
         "height": 48,
         "question": "What type is Jolteon?",
@@ -327,10 +328,10 @@ let pokemon = [
         "answer": "a) electric",
         "hp": 65,
         "atk": 65
-
     },
     {
         "img": "./img/sprites/edited/red_box/koffing.png",
+        "img_back": "",
         "width": 69,
         "height": 61,
         "question": "What type is Koffing?",
@@ -338,21 +339,21 @@ let pokemon = [
         "answer": "a) poison",
         "hp": 40,
         "atk": 65
-
     },
     {
         "img": "./img/sprites/edited/red_box/kyogre.png",
+        "img_back": "",
         "width": 79,
         "height": 78,
         "question": "What weather is created by Kyogres ability when it enters battle?",
         "choices": ["a) harsh sunlight that boosts fire-type moves", "b) hail that damages non-ice-type Pokémon each turn", "c) heavy rain that boosts water-type moves"],
         "answer": "c) heavy rain that boosts water-type moves",
         "hp": 100,
-        "atk": 100
-
+        "atk": 100  
     },
     {
         "img": "./img/sprites/edited/red_box/latias.png",
+        "img_back": "",
         "width": 68,
         "height": 66,
         "question": "What is Latias known for in the Pokémon world?",
@@ -360,10 +361,10 @@ let pokemon = [
         "answer": "a) for being highly protective and forming strong bonds with humans it trusts",
         "hp": 80,
         "atk": 80
-
     },
     {
         "img": "./img/sprites/edited/red_box/latios.png",
+        "img_back": "",
         "width": 73,
         "height": 72,
         "question": "What special ability is Latios known for?",
@@ -371,21 +372,21 @@ let pokemon = [
         "answer": "c) it can use telepathy to talk to humans and Pokémon",
         "hp": 80,
         "atk": 90
-
     },
     {
         "img": "./img/sprites/edited/red_box/leafeon.png",
+        "img_back": "",
         "width": 51,
         "height": 51,
         "question": "How do you evolve Evee into Leafeon?",
         "choices": ["a) by trading it while holding a grass-type item", "b) by using a leaf stone", "c) by leveling up near special mossy or forest areas"],
         "answer": "b) by using a leaf stone",
         "hp": 65,
-        "atk": 110
-
+        "atk": 110  
     },
     {
         "img": "./img/sprites/edited/red_box/lobunny.png",
+        "img_back": "",
         "width": 53,
         "height": 62,
         "question": "What type is Lopunny?",
@@ -393,32 +394,32 @@ let pokemon = [
         "answer": "c) normal",
         "hp": 65,
         "atk": 76
-
     },
     {
         "img": "./img/sprites/edited/red_box/manaphy.png",
+        "img_back": "",
         "width": 54,
         "height": 37,
         "question": "What is unique to Manaphy?",
         "choices": ["a) it evolves to a stronger form after leveling up", "b) it can breed with Ditto to make Phione", "c) it changes its form depending on the weather"],
         "answer": "b) it can breed with Ditto to make Phione",
         "hp": 100,
-        "atk": 100
-
+        "atk": 100  
     },
     {
         "img": "./img/sprites/edited/red_box/mew.png",
+        "img_back": "",
         "width": 47,
         "height": 42,
         "question": "Why is Mew special?",
         "choices": ["a) it can evolve into any Pokémon", "b) it can learn almost every move", "c) it has the highst HP ingame"],
         "answer": "b) it can learn almost every move",
         "hp": 100,
-        "atk": 100
-
+        "atk": 100  
     },
     {
         "img": "./img/sprites/edited/red_box/minun.png",
+        "img_back": "",
         "width": 33,
         "height": 39,
         "question": "What type is Minun?",
@@ -426,10 +427,10 @@ let pokemon = [
         "answer": "c) electric",
         "hp": 60,
         "atk": 40
-
     },
     {
         "img": "./img/sprites/edited/red_box/mudkip.png",
+        "img_back": "",
         "width": 37,
         "height": 39,
         "question": "What is Mudkip's final evelution?",
@@ -437,10 +438,10 @@ let pokemon = [
         "answer": "a) Swampert",
         "hp": 50,
         "atk": 70
-
     },
     {
         "img": "./img/sprites/edited/red_box/persian.png",
+        "img_back": "",
         "width": 59,
         "height": 53,
         "question": "What type is Persian?",
@@ -448,10 +449,10 @@ let pokemon = [
         "answer": "c) normal",
         "hp": 65,
         "atk": 70
-
     },
     {
         "img": "./img/sprites/edited/red_box/phione.png",
+        "img_back": "",
         "width": 49,
         "height": 37,
         "question": "Where can you obtain Phione?",
@@ -459,10 +460,10 @@ let pokemon = [
         "answer": "c) by hatching eggs through a special way",
         "hp": 80,
         "atk": 80
-
     },
     {
         "img": "./img/sprites/edited/red_box/plusle_shiny.png",
+        "img_back": "",
         "width": 32,
         "height": 37,
         "question": "What type is Plusle?",
@@ -470,10 +471,10 @@ let pokemon = [
         "answer": "b) electric",
         "hp": 60,
         "atk": 50
-
     },
     {
         "img": "./img/sprites/edited/red_box/ponya_shiny.png",
+        "img_back": "",
         "width": 50,
         "height": 53,
         "question": "What does Ponyta evolve into?",
@@ -481,10 +482,10 @@ let pokemon = [
         "answer": "c) Rapidash",
         "hp": 50,
         "atk": 85
-
     },
     {
         "img": "./img/sprites/edited/red_box/psyduck.png",
+        "img_back": "",
         "width": 40,
         "height": 46,
         "question": "What commonly happens when Psyducks headache becomes too strong?",
@@ -492,43 +493,43 @@ let pokemon = [
         "answer": "b) it releases a burst of psychic power uncontrollaby",
         "hp": 50,
         "atk": 52
-
     },
     {
         "img": "./img/sprites/edited/red_box/rapidash.png",
+        "img_back": "",
         "width": 69,
         "height": 69,
         "question": "What is Rapidash known for in the Pokédex?",
         "choices": ["a) it can run at very high speeds, with its flaming mane and tail intensifying as it gallops", "b) it is said to have a calm nature despite its blazing appearance", "c) its know to start small fires in grass, because of embers it kicks up while running"],
         "answer": "a) it can run at very high speeds, with its flaming mane and tail intensifying as it gallops",
         "hp": 65,
-        "atk": 100
-
+        "atk": 100  
     },
     {
         "img": "./img/sprites/edited/red_box/rayquaza.png",
+        "img_back": "",
         "width": 76,
         "height": 80,
         "question": "What did Rayquaza do according to the lore?",
         "choices": ["a) stopps Groudons and Kyogres battles", "b) cause disaster when it flies", "c) contolls the weather worlwide"],
         "answer": "a) stopps Groudons and Kyogres battles",
         "hp": 105,
-        "atk": 150
-
+        "atk": 150  
     },
     {
         "img": "./img/sprites/edited/red_box/regigifas.png",
+        "img_back": "",
         "width": 79,
         "height": 70,
         "question": "What is an ability of Regigigas?",
         "choices": ["a) intimidate", "b) slow start", "c) pressure"],
         "answer": "b) slow start",
         "hp": 110,
-        "atk": 160
-
+        "atk": 160  
     },
     {
         "img": "./img/sprites/edited/red_box/sableye.png",
+        "img_back": "",
         "width": 43,
         "height": 44,
         "question": "What was unique about Sableye before fairy types were introduced?",
@@ -536,10 +537,10 @@ let pokemon = [
         "answer": "a) it had no weaknesses",
         "hp": 50,
         "atk": 75
-
     },
     {
         "img": "./img/sprites/edited/red_box/seel.png",
+        "img_back": "",
         "width": 47,
         "height": 53,
         "question": "What type is Seel?",
@@ -547,21 +548,21 @@ let pokemon = [
         "answer": "a) water",
         "hp": 65,
         "atk": 45
-
     },
     {
         "img": "./img/sprites/edited/red_box/shaymin.png",
+        "img_back": "",
         "width": 35,
         "height": 26,
         "question": "What is required for Shaymin to change into its sky form?",
         "choices": ["a) being in battle during sunny weather", "b) leveling up while holding a special item", "c) a gracidea that is used during daytime"],
         "answer": "c) a gracidea that is used during daytime",
         "hp": 100,
-        "atk": 100
-
+        "atk": 100  
     },
     {
         "img": "./img/sprites/edited/red_box/slowpoke.png",
+        "img_back": "",
         "width": 56,
         "height": 44,
         "question": "What happens when Shellder bites Slowpoke's tail?",
@@ -569,21 +570,21 @@ let pokemon = [
         "answer": "b) Slowpoke evolves into Slowbro",
         "hp": 90,
         "atk": 65
-
     },
     {
         "img": "./img/sprites/edited/red_box/snorlax.png",
+        "img_back": "",
         "width": 64,
         "height": 69,
         "question": "What typically wakes up Snorlax?",
         "choices": ["a) playing a poké flute near it", "b) using a fire-move on it", "c) attacking it repeatedly"],
         "answer": "a) playing a poké flute near it",
         "hp": 160,
-        "atk": 110
-
+        "atk": 110  
     },
     {
         "img": "./img/sprites/edited/red_box/spoink.png",
+        "img_back": "",
         "width": 25,
         "height": 47,
         "question": "What happens if Spoink stops bouncing?",
@@ -591,10 +592,10 @@ let pokemon = [
         "answer": "c) its heart stops",
         "hp": 60,
         "atk": 25
-
     },
     {
         "img": "./img/sprites/edited/red_box/suicine.png",
+        "img_back": "",
         "width": 68,
         "height": 72,
         "question": "What is Suicine known for in the Pokémon lore?",
@@ -602,10 +603,10 @@ let pokemon = [
         "answer": "b) purifying and traveling across water to cleanse it",
         "hp": 100,
         "atk": 75
-
     },
     {
         "img": "./img/sprites/edited/red_box/togekiss_shiny.png",
+        "img_back": "",
         "width": 77,
         "height": 43,
         "question": "How is Togekiss obtained from Togetic?",
@@ -613,10 +614,10 @@ let pokemon = [
         "answer": "b) by using a shiny stone",
         "hp": 85,
         "atk": 50
-
     },
     {
         "img": "./img/sprites/edited/red_box/togepi.png",
+        "img_back": "",
         "width": 24,
         "height": 28,
         "question": "How can you obtain Togepi?",
@@ -624,10 +625,10 @@ let pokemon = [
         "answer": "c) from an egg",
         "hp": 35,
         "atk": 20
-
     },
     {
         "img": "./img/sprites/edited/red_box/vaporeon.png",
+        "img_back": "",
         "width": 54,
         "height": 56,
         "question": "What is Vaporeon known for in the Pokédex?",
@@ -635,10 +636,10 @@ let pokemon = [
         "answer": "a) that it can merge with water to become nearly invisible",
         "hp": 130,
         "atk": 65
-
     },
     {
         "img": "./img/sprites/edited/red_box/venonat.png",
+        "img_back": "",
         "width": 49,
         "height": 51,
         "question": "What type is Venonat?",
@@ -646,10 +647,10 @@ let pokemon = [
         "answer": "a) bug / poison",
         "hp": 60,
         "atk": 55
-
     },
     {
         "img": "./img/sprites/edited/red_box/wobufet.png",
+        "img_back": "",
         "width": 46,
         "height": 51,
         "question": "What makes Wobbuffet special?",
@@ -657,10 +658,10 @@ let pokemon = [
         "answer": "c) its counterattacks",
         "hp": 190,
         "atk": 33
-
     },
     {
         "img": "./img/sprites/edited/red_box/woper.png",
+        "img_back": "",
         "width": 39,
         "height": 31,
         "question": "What type is Wooper?",
@@ -668,10 +669,10 @@ let pokemon = [
         "answer": "c) water / ground",
         "hp": 55,
         "atk": 45
-
     },
     {
         "img": "./img/sprites/edited/red_box/wurmple.png",
+        "img_back": "",
         "width": 28,
         "height": 45,
         "question": "What can Wurmple evolve into?",
@@ -679,10 +680,10 @@ let pokemon = [
         "answer": "b) Beautifly / Dustox",
         "hp": 45,
         "atk": 45
-
     },
     {
         "img": "./img/sprites/edited/red_box/zubat.png",
+        "img_back": "",
         "width": 48,
         "height": 39,
         "question": "Where can you usually find Zubat?",
@@ -690,6 +691,5 @@ let pokemon = [
         "answer": "c) in caves",
         "hp": 40,
         "atk": 45
-
     }
 ]

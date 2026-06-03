@@ -372,17 +372,36 @@ html {
 
 #trainerPokemon {
   position: fixed;
-  top: 60%;
-  left: 17%;
+  top: 35%;
+  left: 20%;
 
-  transform: scaleX(-1) scale(0.75);
-
+  transform: scale(0.75);
+  width: auto;
 }
 
 #rivalPokemon {
   position: fixed;
-  left: 60%;
-  top: 10%;
+  left: 65%;
+  top: 20%;
 
   transform: scale(0.75);
+  width: 20%;
+}
+
+#rollButton {
+  border: white solid 1px;
+  font-size: 5%;
+  color: white;
+  text-align: center;
+
+  width: 20%;
+  padding: 1%;
+}
+
+#rollButton h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 50%;
+
+  width: auto;
 }

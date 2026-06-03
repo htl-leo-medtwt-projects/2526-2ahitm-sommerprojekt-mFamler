@@ -65,7 +65,7 @@ function startGame() {
 
     gameLoop();
 
-    gameTimer = setTimeout(endRun, 180000)
+    gameTimer = setTimeout(endRun, 300000)
     startTime = performance.now()
 
     updateHUD()
@@ -375,7 +375,8 @@ function bossFight() {
     rivalCurrPokemon = 0
     trainerCurrPokemon = 0
 
-    clearTimeout(timer)
+    //clearTimeout(timer)
+    clearInterval(gameTimer)
 
     //randomly choose 3 pokemon for player
     let random = Math.floor(Math.random() * PLAYER.coinCount)
@@ -384,9 +385,9 @@ function bossFight() {
         randomArray[i] = random
         random = Math.floor(Math.random() * PLAYER.coinCount)
         //endless need to fix
-        while(randomArray.includes(random)) {
+        /*while(randomArray.includes(random)) {
             random = Math.floor(Math.random() * PLAYER.coinCount)
-        }
+        }*/
     }
 
     for(let i = 0; i < 3; i++) {
@@ -398,9 +399,9 @@ function bossFight() {
         randomArray[i] = random
         random = Math.floor(Math.random() * pokemon.length)
         //endless need to fix
-        while(randomArray.includes(random)) {
+        /*while(randomArray.includes(random)) {
             random = Math.floor(Math.random() * pokemon.length)
-        }
+        }*/
     }
 
     for(let i = 0; i < 3; i++) {
@@ -409,11 +410,15 @@ function bossFight() {
 
     //display the pokemon
     rivalPokemon.src = rivalPokemonArray[rivalCurrPokemon].img
-    trainerPokemon.src = pokemonChosen[trainerCurrPokemon].img
+    trainerPokemon.src = pokemonChosen[trainerCurrPokemon].img_back
 
-    rivalPokemon.style.width = rivalPokemonArray[rivalCurrPokemon].width + "px"
-    rivalPokemon.style.height = rivalPokemonArray[rivalCurrPokemon].height + "px"
+    //rivalPokemon.style.width = rivalPokemonArray[rivalCurrPokemon].width + "px"
+    //rivalPokemon.style.height = rivalPokemonArray[rivalCurrPokemon].height + "px"
 
-    trainerPokemon.style.width = pokemonChosen[trainerCurrPokemon].width + "px"
-    trainerPokemon.style.height = pokemonChosen[trainerCurrPokemon].height + "px"
+    //trainerPokemon.style.width = pokemonChosen[trainerCurrPokemon].width + "px"
+    //trainerPokemon.style.height = pokemonChosen[trainerCurrPokemon].height + "px"
+}
+
+function roll() {
+
 }
