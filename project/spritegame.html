@@ -17,6 +17,7 @@
 	</script>!-->
 
 	<script src="./json/redBoxJsonArray.js" defer></script>
+	<script src="./json/pokemonCaught.js" defer></script>
 
 	<script src="./js/spritegame_detectCollisions.js" defer></script>
 	<script src="./js/spritegame_keyevents.js" defer></script>
@@ -25,7 +26,6 @@
 	<script src="./js/spritegame_loop.js" defer></script>
 </head>
 <body id="body">
-
 	<div id="audioButton" onclick="muteUnmute()">
 		<img src="./img/audio_icon/off.png" alt="music off" id="offNOn">
 	</div>
@@ -76,7 +76,21 @@
 		</div>
 	</div>
 
-	<div id="endGame"></div>
+	<div id="endGame">
+		<div id="trainerSide">
+			<div>
+				<img src="./img/sprites/edited/bossFight/trainer.png" alt="trainer">
+			</div>
+			<div></div>
+		</div>
+
+		<div id="rivalSide">
+			<div>
+				<img src="./img/sprites/edited/bossFight/rival.png" alt="rival">
+			</div>
+			<div></div>
+		</div>
+	</div>
 
 	<div id="score">
 		<div id="scoreboard">

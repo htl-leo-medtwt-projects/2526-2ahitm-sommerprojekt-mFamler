@@ -330,3 +330,21 @@ html {
 
   cursor: url(../img/cursor/open.png), auto;
 }
+
+#endGame {
+  background-image: url(../img/sprites/edited/bossFight/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+
+  width: 243px;
+  height: 114px;
+  transform: scale(3.5);
+
+  padding: auto;
+  margin: auto;
+
+  position: fixed;
+  top: 20%;
+  left: 45%;
+}

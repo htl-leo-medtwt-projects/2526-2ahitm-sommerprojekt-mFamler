@@ -43,6 +43,7 @@ function startGame() {
     //score.style.display = "none"
     body.style.backgroundImage = "url(./img/bg/basic/c4m9iW.webp)"
     questions.style.display = "none"
+    endGame.style.display = "none"
 
     PLAYER.coinCount = 0
     pokemonCounter = 0
@@ -65,6 +66,8 @@ function startGame() {
     startTime = performance.now()
 
     updateHUD()
+
+    lives = 3
 }
 
 
@@ -74,7 +77,7 @@ function startGame() {
  * **********************************/
 function updateHUD(){
     // print values in debugger box
-    GAME_SCREEN.debug_output.innerHTML = `x: ${PLAYER.box.style.left} | y: ${PLAYER.box.style.top} | animation: ${PLAYER.spriteImgNumber} | count: ${PLAYER.coinCount}/${pokemonCounter + 1} | lives: <3 <3 <3`;
+    GAME_SCREEN.debug_output.innerHTML = `x: ${PLAYER.box.style.left} | y: ${PLAYER.box.style.top} | animation: ${PLAYER.spriteImgNumber} | count: ${PLAYER.coinCount}/${pokemonCounter + 1} | lives: ${lives}`;
     //GAME_SCREEN.debug_output.innerHTML = `lives: <3 <3 <3 | points: ` + PLAYER.coinCount
 }
 
@@ -110,6 +113,9 @@ let gameTimer
 let allPlayerName = JSON.parse( localStorage['highscores'] ?? '[]' );
 let allPlayerCounter = 0
 let startTime
+let pokemonCaughtArray = []
+
+let lives = 3
 
 //
 function loadPage() {
@@ -137,7 +143,7 @@ function showRules() {
             <div>You are a trainer trying to catch some Pokemon to face off with against your rival.</div>
             <div>Catch as many Pokemon as you can in limited time.</div>
             <div>You catch one if you answer the question correctly.</div>
-            <div>You get 3 lives, if you answer incorrectly you loose one live.</div>
+            <div>You get 3 lives, if you answer incorrectly you loose one live. Loose all lives and it's game over.</div>
             <div>After the timer is up choose the Pokemon you want to face up with against your rival.</div>
             <div>Movement is controlled with the arow-keys.</div>
             <div onclick="goBackToHome()" class="back">back</div>
@@ -170,6 +176,22 @@ function showScoreBoard() {
     home.style.display = "none"
     game.style.display = "none"
     score.style.display = "block"
+
+    localStorage['highscores'] = JSON.stringify(allPlayerName);
+
+    txt = ""
+    for(let i = 0; i < allPlayerName.length; i++) {
+        txt += `
+            <div style="padding-top: 1.5%;">
+                ${allPlayerName[i].playerName} // ${allPlayerName[i].time}s // ${allPlayerName[i].coinCount}
+            </div>
+        `
+    }
+
+    playerScoreSorted.style.display = "block"
+    playerScoreSorted.innerHTML = txt
+
+    score.style.height = "auto"
 }
 
 function endRun() {
@@ -183,6 +205,7 @@ function endRun() {
     score.style.display = "block"
     players.style.display = "block"
     backFromScore.style.display = "none"
+    endGame.style.display = "none"
 
     txt = ""
     txt = `
@@ -207,6 +230,8 @@ function endRun() {
 }
 
 function addScore() {
+    allPlayerName = JSON.parse( localStorage['highscores'] ?? '[]' );
+
     let playerNameInput = document.getElementById("playerName")
     //let playerInfo = document.getElementById("playerInfo")
     
@@ -285,11 +310,22 @@ function checkAnswer(choice) {
         console.log("true" + PLAYER.coinCount)
         updateHUD()
     }
+    else {
+        lives--
+        updateHUD()
+
+        if(lives == 0) {
+            endRun()
+        }
+    }
 
     pokemonCounter++
 
     if(63 == pokemonCounter) {
-        endRun()
+        //endRun()
+        if(0 < lives) {
+            bossFight()
+        }
     }
     else {
         //console.log("after check ..." + pokemonCounter)
@@ -315,4 +351,11 @@ function muteUnmute() {
         offNOn.src = "./img/audio_icon/off.png"
         musicState = false
     }
+}
+
+function bossFight() {
+    endGame.style.display = "block"
+    surface.style.display = "none"
+
+    body.style.backgroundImage = "url(./img/bg/basic/wp8862046.jpg)"
 }
