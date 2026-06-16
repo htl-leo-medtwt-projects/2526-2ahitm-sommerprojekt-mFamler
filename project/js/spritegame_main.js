@@ -410,7 +410,7 @@ function bossFight() {
 
     //display the pokemon
     rivalPokemon.src = rivalPokemonArray[rivalCurrPokemon].img
-    trainerPokemon.src = pokemonChosen[trainerCurrPokemon].img_back
+    trainerPokemon.src = pokemonChosen[trainerCurrPokemon].back
 
     //rivalPokemon.style.width = rivalPokemonArray[rivalCurrPokemon].width + "px"
     //rivalPokemon.style.height = rivalPokemonArray[rivalCurrPokemon].height + "px"

@@ -1,7 +1,7 @@
 let pokemon = [
     {
         "img": "./img/sprites/edited/red_box/abba.png",
-        "img_back": "../project/img/sprites/edited/red_box/back/abba.png",
+        "back": "../project/img/sprites/edited/red_box/back/abba.png",
         "width": 52,
         "height": 43,
         "question": "What type is Abra?",
@@ -12,7 +12,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/absol.png",
-        "img_back": "../project/img/sprites/edited/red_box/back/absol.png",
+        "back": "../project/img/sprites/edited/red_box/back/absol.png",
         "width": 57,
         "height": 66,
         "question": "What type is Absol?",
@@ -23,7 +23,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/arcanine.png",
-        "img_back": "../project/img/sprites/edited/red_box/back/arcanine.png",
+        "back": "../project/img/sprites/edited/red_box/back/arcanine.png",
         "width": 70,
         "height": 70,
         "question": "What type is Arcanine?",
@@ -34,7 +34,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/azuril.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/azuril.png",
         "width": 44,
         "height": 48,
         "question": "What type is Azurill?",
@@ -45,7 +45,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/buizel.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/buizel.png",
         "width": 44,
         "height": 53,
         "question": "What type is Buizel?",
@@ -56,7 +56,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/butterfree.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/butterfree.png",
         "width": 57,
         "height": 51,
         "question": "What type is Butterfree?",
@@ -67,9 +67,9 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/chinchou.png",
-        "img_back": "",
-        "width": 60,
-        "height": 33,
+        "back": "../project/img/sprites/edited/red_box/back/chinchou.png",
+        "width": 48,
+        "height": 40,
         "question": "What type is Chinchou?",
         "choices": ["a) electric", "b) water / electric", "c) water / ice"],
         "answer": "b) water / electric",
@@ -78,7 +78,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/chingling.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/chingling.png",
         "width": 33,
         "height": 34,
         "question": "What type is Chingling?",
@@ -89,7 +89,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/clamperl.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/clamperl.png",
         "width": 38,
         "height": 38,
         "question": "What is special about Clamperls evelution?",
@@ -100,7 +100,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/clefa.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/clefa.png",
         "width": 29,
         "height": 27,
         "question": "What type is Cleffa?",
@@ -111,7 +111,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/cynda.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/cynda.png",
         "width": 43,
         "height": 36,
         "question": "What type is Cyndaquill?",
@@ -122,7 +122,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/dartin.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/dartin.png",
         "width": 35,
         "height": 44,
         "question": "What is Dratinis final evelution?",
@@ -133,7 +133,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/dragonair.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/dragonair.png",
         "width": 62,
         "height": 54,
         "question": "How does is Dragonair evolved?",
@@ -144,7 +144,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/entei.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/entei.png",
         "width": 75,
         "height": 68,
         "question": "What type is Entei?",
@@ -155,7 +155,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/espeon.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/espeon.png",
         "width": 53,
         "height": 53,
         "question": "How do you evolve Evee into Espeon?",
@@ -166,7 +166,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/espeon_shiny.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/espeon_shiny.png",
         "width": 53,
         "height": 53,
         "question": "How do you get a shiny Espeon? (assuming under the right conditions to get a Espeon)",
@@ -177,7 +177,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/evee.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/evee.png",
         "width": 42,
         "height": 43,
         "question": "Which one is an evelution of Evee?",
@@ -188,7 +188,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/fairy.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/fairy.png",
         "width": 37,
         "height": 35,
         "question": "In the Pokémon lore, where is Clefairy commonly associated with appearing?",
@@ -199,7 +199,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/farfetched_shiny.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/farfetched_shiny.png",
         "width": 45,
         "height": 48,
         "question": "What does Farfetche'd use the leek for?",
@@ -210,7 +210,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/flareon.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/flareon.png",
         "width": 44,
         "height": 46,
         "question": "What type is Flareon?",
@@ -221,7 +221,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/froslas.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/froslas.png",
         "width": 37,
         "height": 54,
         "question": "What type combo does Froslass have?",
@@ -232,7 +232,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/gastly.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/gastly.png",
         "width": 69,
         "height": 54,
         "question": "What type is Gastly?",
@@ -243,7 +243,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/gengar_shiny.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/gengar_shiny.png",
         "width": 58,
         "height": 53,
         "question": "What type is Gengar?",
@@ -254,7 +254,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/giratina.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/giratina.png",
         "width": 78,
         "height": 76,
         "question": "What is special about Giratina?",
@@ -265,7 +265,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/glaceon_shiny.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/glaceon_shiny.png",
         "width": 66,
         "height": 49,
         "question": "What type is Glaceon?",
@@ -276,7 +276,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/groudon.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/groudon.png",
         "width": 78,
         "height": 73,
         "question": "What weather is created by Groudons ability when it enters battle?",
@@ -287,7 +287,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/haunter.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/haunter.png",
         "width": 70,
         "height": 49,
         "question": "How does Haunter evolve?",
@@ -298,7 +298,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/jiggly.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/jiggly.png",
         "width": 39,
         "height": 36,
         "question": "What does Jigglypuff's singing do?",
@@ -309,7 +309,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/jirachi.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/jirachi.png",
         "width": 46,
         "height": 43,
         "question": "What is Jirachi known for?",
@@ -320,7 +320,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/jolteon.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/jolteon.png",
         "width": 43,
         "height": 48,
         "question": "What type is Jolteon?",
@@ -331,7 +331,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/koffing.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/koffing.png",
         "width": 69,
         "height": 61,
         "question": "What type is Koffing?",
@@ -342,7 +342,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/kyogre.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/kyogre.png",
         "width": 79,
         "height": 78,
         "question": "What weather is created by Kyogres ability when it enters battle?",
@@ -353,7 +353,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/latias.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/latias.png",
         "width": 68,
         "height": 66,
         "question": "What is Latias known for in the Pokémon world?",
@@ -364,7 +364,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/latios.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/latios.png",
         "width": 73,
         "height": 72,
         "question": "What special ability is Latios known for?",
@@ -375,7 +375,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/leafeon.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/leafeon.png",
         "width": 51,
         "height": 51,
         "question": "How do you evolve Evee into Leafeon?",
@@ -386,7 +386,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/lobunny.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/lobunny.png",
         "width": 53,
         "height": 62,
         "question": "What type is Lopunny?",
@@ -397,7 +397,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/manaphy.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/manaphy.png",
         "width": 54,
         "height": 37,
         "question": "What is unique to Manaphy?",
@@ -408,7 +408,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/mew.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/mew.png",
         "width": 47,
         "height": 42,
         "question": "Why is Mew special?",
@@ -419,7 +419,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/minun.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/minun.png",
         "width": 33,
         "height": 39,
         "question": "What type is Minun?",
@@ -430,7 +430,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/mudkip.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/mudkip.png",
         "width": 37,
         "height": 39,
         "question": "What is Mudkip's final evelution?",
@@ -441,7 +441,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/persian.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/persian.png",
         "width": 59,
         "height": 53,
         "question": "What type is Persian?",
@@ -452,7 +452,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/phione.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/phione.png",
         "width": 49,
         "height": 37,
         "question": "Where can you obtain Phione?",
@@ -463,7 +463,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/plusle_shiny.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/plusle_shiny.png",
         "width": 32,
         "height": 37,
         "question": "What type is Plusle?",
@@ -474,7 +474,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/ponya_shiny.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/ponya_shiny.png",
         "width": 50,
         "height": 53,
         "question": "What does Ponyta evolve into?",
@@ -485,7 +485,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/psyduck.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/psyduck.png",
         "width": 40,
         "height": 46,
         "question": "What commonly happens when Psyducks headache becomes too strong?",
@@ -496,7 +496,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/rapidash.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/rapidash.png",
         "width": 69,
         "height": 69,
         "question": "What is Rapidash known for in the Pokédex?",
@@ -507,7 +507,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/rayquaza.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/rayquaza.png",
         "width": 76,
         "height": 80,
         "question": "What did Rayquaza do according to the lore?",
@@ -518,7 +518,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/regigifas.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/regigifas.png",
         "width": 79,
         "height": 70,
         "question": "What is an ability of Regigigas?",
@@ -529,7 +529,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/sableye.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/sableye.png",
         "width": 43,
         "height": 44,
         "question": "What was unique about Sableye before fairy types were introduced?",
@@ -540,7 +540,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/seel.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/seel.png",
         "width": 47,
         "height": 53,
         "question": "What type is Seel?",
@@ -551,7 +551,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/shaymin.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/shaymin.png",
         "width": 35,
         "height": 26,
         "question": "What is required for Shaymin to change into its sky form?",
@@ -562,7 +562,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/slowpoke.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/slowpoke.png",
         "width": 56,
         "height": 44,
         "question": "What happens when Shellder bites Slowpoke's tail?",
@@ -573,7 +573,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/snorlax.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/snorlax.png",
         "width": 64,
         "height": 69,
         "question": "What typically wakes up Snorlax?",
@@ -584,7 +584,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/spoink.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/spoink.png",
         "width": 25,
         "height": 47,
         "question": "What happens if Spoink stops bouncing?",
@@ -595,7 +595,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/suicine.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/suicine.png",
         "width": 68,
         "height": 72,
         "question": "What is Suicine known for in the Pokémon lore?",
@@ -606,7 +606,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/togekiss_shiny.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/togekiss_shiny.png",
         "width": 77,
         "height": 43,
         "question": "How is Togekiss obtained from Togetic?",
@@ -617,7 +617,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/togepi.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/togepi.png",
         "width": 24,
         "height": 28,
         "question": "How can you obtain Togepi?",
@@ -628,7 +628,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/vaporeon.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/vaporeon.png",
         "width": 54,
         "height": 56,
         "question": "What is Vaporeon known for in the Pokédex?",
@@ -639,7 +639,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/venonat.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/venonat.png",
         "width": 49,
         "height": 51,
         "question": "What type is Venonat?",
@@ -650,7 +650,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/wobufet.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/wobufet.png",
         "width": 46,
         "height": 51,
         "question": "What makes Wobbuffet special?",
@@ -661,7 +661,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/woper.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/woper.png",
         "width": 39,
         "height": 31,
         "question": "What type is Wooper?",
@@ -672,7 +672,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/wurmple.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/wurmple.png",
         "width": 28,
         "height": 45,
         "question": "What can Wurmple evolve into?",
@@ -683,7 +683,7 @@ let pokemon = [
     },
     {
         "img": "./img/sprites/edited/red_box/zubat.png",
-        "img_back": "",
+        "back": "../project/img/sprites/edited/red_box/back/zubat.png",
         "width": 48,
         "height": 39,
         "question": "Where can you usually find Zubat?",
