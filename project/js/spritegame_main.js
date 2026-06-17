@@ -11,7 +11,7 @@
  ***********************************/
 let GAME_SCREEN = {
     surface: document.getElementById('surface'),
-    surfaceScale: '50%',
+    surfaceScale: '60%',
     redbox: document.getElementById('redBox'),
     startButton: document.getElementById('startButton'),
     debug_output: document.getElementById('debug_output')
@@ -36,10 +36,12 @@ let GAME_CONFIG = {
  * START GAME
  * **********************************/
 function startGame() {
+    selectionSound.play()
+
     home.style.display = "none" 
     game.style.display = "block"
     surface.style.display = "block"
-    dashboard.style.display = "block"
+    dashboard.style.display = "flex"
     //score.style.display = "none"
     body.style.backgroundImage = "url(./img/bg/basic/c4m9iW.webp)"
     questions.style.display = "none"
@@ -80,7 +82,7 @@ function startGame() {
  * **********************************/
 function updateHUD(){
     // print values in debugger box
-    GAME_SCREEN.debug_output.innerHTML = `x: ${PLAYER.box.style.left} | y: ${PLAYER.box.style.top} | ${PLAYER.coinCount}/${pokemonCounter + 1} pokemon caught | lives: ${lives}`;
+    GAME_SCREEN.debug_output.innerHTML = `${PLAYER.coinCount}/${pokemonCounter + 1} pokemon caught | lives: ${lives}`;
 }
 
 // new code
@@ -126,6 +128,8 @@ let rivalPokemonArray = []
 let rivalCurrPokemon = 0
 let trainerCurrPokemon = 0
 
+let selectionSound = new Audio("./audio/selection/pokemon_a_button.mp3")
+
 //
 function loadPage() {
     game.style.display = "none"
@@ -137,6 +141,8 @@ function loadPage() {
 loadPage()
 
 function showRules() {
+    selectionSound.play()
+
     start.style.display = "none"
     rules.style.display = "none"
     idk.style.display = "none"  
@@ -164,6 +170,8 @@ function showRules() {
 }
 
 function goBackToHome() {
+    selectionSound.play()
+
     start.style.display = "block"
     rules.style.display = "block"
     idk.style.display = "block"  
@@ -172,6 +180,8 @@ function goBackToHome() {
 }
 
 function goBack() {
+    selectionSound.play()
+
     body.style.backgroundImage = "url(./img/bg/start/adf23c20-d055-4c08-95c9-ac023fcca730.jpg)"
 
     home.style.display = "block"
@@ -180,6 +190,8 @@ function goBack() {
 }
 
 function showScoreBoard() {
+    selectionSound.play()
+
     body.style.backgroundImage = "url(./img/bg/start/adf23c20-d055-4c08-95c9-ac023fcca730.jpg)"
 
     home.style.display = "none"
@@ -204,6 +216,8 @@ function showScoreBoard() {
 }
 
 function endRun() {
+    selectionSound.play()
+
     body.style.backgroundImage = "url(./img/bg/start/adf23c20-d055-4c08-95c9-ac023fcca730.jpg)"
 
     let players = document.getElementById("players")
@@ -247,6 +261,8 @@ function addScore() {
     let playerName = playerNameInput.value
 
     if(playerName != "") {
+        selectionSound.play()
+
         players.style.display = "none"
         backFromScore.style.display = "block"
 
@@ -306,9 +322,11 @@ function catchPokemon() {
 }
 
 function checkAnswer(choice) {
+    selectionSound.play()
+
     questions.style.display = "none"
     surface.style.display = "block"
-    dashboard.style.display = "block"
+    dashboard.style.display = "flex"
     //pokemonCounter++
 
     console.log(choice.innerHTML)
@@ -349,6 +367,8 @@ function checkAnswer(choice) {
 
 function muteUnmute() {
     if(musicState == false) {
+        selectionSound.play()
+
         //start music
         bgmusic = new Audio("./audio/bg_music/end.mp3")
         bgmusic.play()
@@ -357,6 +377,8 @@ function muteUnmute() {
         musicState = true
     }
     else {
+        selectionSound.play()
+
         //stop music
         bgmusic.pause()
 
@@ -368,6 +390,7 @@ function muteUnmute() {
 function bossFight() {
     endGame.style.display = "block"
     surface.style.display = "none"
+    GAME_SCREEN.debug_output.style.display = "none"
 
     body.style.backgroundImage = "url(./img/bg/basic/wp8862046.jpg)"
     GAME_SCREEN.debug_output.style.backgroundColor = "rgba(107, 176, 209, 0.679)"
@@ -396,8 +419,8 @@ function bossFight() {
 
     //pokemon chosen for the rival
     for(let i = 0; i < 3; i++) {
-        randomArray[i] = random
         random = Math.floor(Math.random() * pokemon.length)
+        randomArray[i] = random
         //endless need to fix
         /*while(randomArray.includes(random)) {
             random = Math.floor(Math.random() * pokemon.length)
@@ -412,13 +435,34 @@ function bossFight() {
     rivalPokemon.src = rivalPokemonArray[rivalCurrPokemon].img
     trainerPokemon.src = pokemonChosen[trainerCurrPokemon].back
 
-    //rivalPokemon.style.width = rivalPokemonArray[rivalCurrPokemon].width + "px"
-    //rivalPokemon.style.height = rivalPokemonArray[rivalCurrPokemon].height + "px"
+    rivalPokemon.style.width = rivalPokemonArray[rivalCurrPokemon].width + "px"
+    rivalPokemon.style.height = rivalPokemonArray[rivalCurrPokemon].height + "px"
 
     //trainerPokemon.style.width = pokemonChosen[trainerCurrPokemon].width + "px"
     //trainerPokemon.style.height = pokemonChosen[trainerCurrPokemon].height + "px"
+
+    updateStats()
 }
 
 function roll() {
 
+}
+
+function updateStats() {
+    let trainerStats = document.getElementById("trainerStats")
+    let rivalStats = document.getElementById("rivalStats")
+    let tpName = document.getElementById("tpName")
+    let tpHp = document.getElementById("tpHp")
+    let tpAtk = document.getElementById("tpAtk")
+    let rpName = document.getElementById("rpName")
+    let rpHp = document.getElementById("rpHp")
+    let rpAtk = document.getElementById("rpAtk")
+
+    tpName.innerHTML = pokemonChosen[trainerCurrPokemon].name
+    tpHp.innerHTML = pokemonChosen[trainerCurrPokemon].hp + "HP"
+    tpAtk.innerHTML = pokemonChosen[trainerCurrPokemon].atk + "ATK"
+
+    rpName.innerHTML = rivalPokemonArray[rivalCurrPokemon].name
+    rpHp.innerHTML = rivalPokemonArray[rivalCurrPokemon].hp + "HP"
+    rpAtk.innerHTML = rivalPokemonArray[rivalCurrPokemon].atk + "ATK"
 }
